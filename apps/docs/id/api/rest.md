@@ -1,7 +1,7 @@
 ---
 description: "Referensi REST API lengkap. Endpoint tool, pemrosesan batch, pipeline, pustaka file, autentikasi, tim, dan operasi admin."
-i18n_output_hash: 9ef22f278d64
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 82586e027cd4
+i18n_source_hash: 016a2821348b
 i18n_provenance: human
 ---
 
@@ -344,7 +344,7 @@ Semua tool AI berjalan di perangkat keras Anda: CPU secara default, atau NVIDIA 
 | `sign-pdf` | Sign PDF | Rute multipart kustom dengan PDF `file`, file tanda tangan `sig0`, `sig1`, dan array JSON `placements` |
 | `pdf-to-text` | PDF to Text | - |
 | `pdf-to-word` | PDF to Word | - |
-| `pdf-metadata` | PDF Metadata | `title`, `author`, `subject`, `keywords` |
+| `pdf-metadata` | PDF Metadata | `title`, `author`, `subject`, `keywords`, `stripAll` |
 | `convert-document` | Convert Document | `format` (docx/odt/rtf/txt) |
 | `convert-presentation` | Convert Presentation | `format` (pptx/odp) |
 | `convert-spreadsheet` | Convert Spreadsheet | `format` (xlsx/ods/csv) |

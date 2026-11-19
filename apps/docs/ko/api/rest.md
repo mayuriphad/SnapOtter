@@ -1,7 +1,7 @@
 ---
 description: "전체 REST API 레퍼런스. 도구 엔드포인트, 배치 처리, 파이프라인, 파일 라이브러리, 인증, 팀, 관리 작업."
-i18n_output_hash: 4baf9d79932f
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 325fadb4a55b
+i18n_source_hash: 016a2821348b
 i18n_provenance: human
 ---
 
@@ -344,7 +344,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `sign-pdf` | PDF 서명 | PDF `file`, 서명 파일 `sig0`, `sig1`, `placements` JSON 배열을 사용하는 커스텀 멀티파트 경로 |
 | `pdf-to-text` | PDF를 텍스트로 | - |
 | `pdf-to-word` | PDF를 Word로 | - |
-| `pdf-metadata` | PDF 메타데이터 | `title`, `author`, `subject`, `keywords` |
+| `pdf-metadata` | PDF 메타데이터 | `title`, `author`, `subject`, `keywords`, `stripAll` |
 | `convert-document` | 문서 변환 | `format`(docx/odt/rtf/txt) |
 | `convert-presentation` | 프레젠테이션 변환 | `format`(pptx/odp) |
 | `convert-spreadsheet` | 스프레드시트 변환 | `format`(xlsx/ods/csv) |

@@ -1,7 +1,7 @@
 ---
 description: "Volledige REST API-referentie. Tool-endpoints, batchverwerking, pipelines, bestandsbibliotheek, authenticatie, teams en beheerbewerkingen."
-i18n_output_hash: ed9a62f2b460
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 522c34531e61
+i18n_source_hash: 016a2821348b
 i18n_provenance: human
 ---
 
@@ -344,7 +344,7 @@ Alle AI-tools draaien op je eigen hardware: standaard op CPU, of op NVIDIA CUDA 
 | `sign-pdf` | PDF ondertekenen | Aangepaste multipart-route met PDF `file`, handtekeningbestanden `sig0`, `sig1` en `placements` JSON-array |
 | `pdf-to-text` | PDF naar tekst | - |
 | `pdf-to-word` | PDF naar Word | - |
-| `pdf-metadata` | PDF-metadata | `title`, `author`, `subject`, `keywords` |
+| `pdf-metadata` | PDF-metadata | `title`, `author`, `subject`, `keywords`, `stripAll` |
 | `convert-document` | Document converteren | `format` (docx/odt/rtf/txt) |
 | `convert-presentation` | Presentatie converteren | `format` (pptx/odp) |
 | `convert-spreadsheet` | Spreadsheet converteren | `format` (xlsx/ods/csv) |

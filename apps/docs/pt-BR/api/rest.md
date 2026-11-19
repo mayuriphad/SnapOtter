@@ -1,7 +1,7 @@
 ---
 description: "Referência completa da API REST. Endpoints de ferramentas, processamento em lote, pipelines, biblioteca de arquivos, autenticação, times e operações administrativas."
-i18n_output_hash: 955525a9893e
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 1d4f46c6a161
+i18n_source_hash: 016a2821348b
 i18n_provenance: human
 ---
 
@@ -344,7 +344,7 @@ Todas as ferramentas de IA rodam no seu hardware: CPU por padrão ou NVIDIA CUDA
 | `sign-pdf` | Assinar PDF | Rota multipart personalizada com o PDF `file`, arquivos de assinatura `sig0`, `sig1` e o array JSON `placements` |
 | `pdf-to-text` | PDF para Texto | - |
 | `pdf-to-word` | PDF para Word | - |
-| `pdf-metadata` | Metadados de PDF | `title`, `author`, `subject`, `keywords` |
+| `pdf-metadata` | Metadados de PDF | `title`, `author`, `subject`, `keywords`, `stripAll` |
 | `convert-document` | Converter Documento | `format` (docx/odt/rtf/txt) |
 | `convert-presentation` | Converter Apresentação | `format` (pptx/odp) |
 | `convert-spreadsheet` | Converter Planilha | `format` (xlsx/ods/csv) |

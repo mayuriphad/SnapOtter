@@ -1,7 +1,7 @@
 ---
 description: "Vollständige REST-API-Referenz. Tool-Endpunkte, Stapelverarbeitung, Pipelines, Dateibibliothek, Authentifizierung, Teams und Admin-Operationen."
-i18n_output_hash: 75bf1a2260d1
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 657419b9d88b
+i18n_source_hash: 016a2821348b
 i18n_provenance: human
 ---
 
@@ -344,7 +344,7 @@ Alle KI-Tools laufen auf Ihrer Hardware: standardmäßig auf der CPU oder auf NV
 | `sign-pdf` | PDF signieren | Benutzerdefinierte multipart-Route mit PDF `file`, Signaturdateien `sig0`, `sig1` und `placements` JSON-Array |
 | `pdf-to-text` | PDF zu Text | - |
 | `pdf-to-word` | PDF zu Word | - |
-| `pdf-metadata` | PDF-Metadaten | `title`, `author`, `subject`, `keywords` |
+| `pdf-metadata` | PDF-Metadaten | `title`, `author`, `subject`, `keywords`, `stripAll` |
 | `convert-document` | Dokument konvertieren | `format` (docx/odt/rtf/txt) |
 | `convert-presentation` | Präsentation konvertieren | `format` (pptx/odp) |
 | `convert-spreadsheet` | Tabellenkalkulation konvertieren | `format` (xlsx/ods/csv) |

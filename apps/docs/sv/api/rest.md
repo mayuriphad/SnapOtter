@@ -1,7 +1,7 @@
 ---
 description: "Fullständig REST API-referens. Verktygsslutpunkter, batchbearbetning, pipelines, filbibliotek, autentisering, team och adminåtgärder."
-i18n_output_hash: e06ca7ea7d8a
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: f28d117dba8f
+i18n_source_hash: 016a2821348b
 i18n_provenance: human
 ---
 
@@ -344,7 +344,7 @@ Alla AI-verktyg körs på din hårdvara: CPU som standard, eller NVIDIA CUDA nä
 | `sign-pdf` | Signera PDF | Anpassad multipart-rutt med PDF `file`, signaturfiler `sig0`, `sig1` och `placements` JSON-array |
 | `pdf-to-text` | PDF till text | - |
 | `pdf-to-word` | PDF till Word | - |
-| `pdf-metadata` | PDF-metadata | `title`, `author`, `subject`, `keywords` |
+| `pdf-metadata` | PDF-metadata | `title`, `author`, `subject`, `keywords`, `stripAll` |
 | `convert-document` | Konvertera dokument | `format` (docx/odt/rtf/txt) |
 | `convert-presentation` | Konvertera presentation | `format` (pptx/odp) |
 | `convert-spreadsheet` | Konvertera kalkylark | `format` (xlsx/ods/csv) |

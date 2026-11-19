@@ -1,7 +1,7 @@
 ---
 description: "Eksiksiz REST API başvurusu. Araç uç noktaları, toplu işleme, işlem hatları, dosya kitaplığı, kimlik doğrulama, ekipler ve yönetici işlemleri."
-i18n_output_hash: 70e53ad992e8
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 8872e4dece03
+i18n_source_hash: 016a2821348b
 i18n_provenance: human
 ---
 
@@ -344,7 +344,7 @@ Tüm yapay zeka araçları kendi donanımınızda çalışır: varsayılan olara
 | `sign-pdf` | PDF İmzala | PDF `file`, imza dosyaları `sig0`, `sig1` ve `placements` JSON dizisi içeren özel multipart yol |
 | `pdf-to-text` | PDF'den Metne | - |
 | `pdf-to-word` | PDF'den Word'e | - |
-| `pdf-metadata` | PDF Meta Verileri | `title`, `author`, `subject`, `keywords` |
+| `pdf-metadata` | PDF Meta Verileri | `title`, `author`, `subject`, `keywords`, `stripAll` |
 | `convert-document` | Belge Dönüştür | `format` (docx/odt/rtf/txt) |
 | `convert-presentation` | Sunum Dönüştür | `format` (pptx/odp) |
 | `convert-spreadsheet` | Elektronik Tablo Dönüştür | `format` (xlsx/ods/csv) |

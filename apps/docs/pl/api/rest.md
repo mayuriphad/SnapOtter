@@ -1,8 +1,8 @@
 ---
 description: "Kompletna dokumentacja API REST. Punkty końcowe narzędzi, przetwarzanie wsadowe, potoki, biblioteka plików, uwierzytelnianie, zespoły i operacje administracyjne."
-i18n_output_hash: 8df34fa0c217
+i18n_output_hash: b51cc467e6c3
 i18n_hash_version: 2
-i18n_source_hash: e1ea853b4dd1
+i18n_source_hash: 016a2821348b
 i18n_provenance: human
 ---
 
@@ -345,7 +345,7 @@ Wszystkie narzędzia AI działają na Twoim sprzęcie: domyślnie na CPU lub na 
 | `sign-pdf` | Podpisywanie PDF | Niestandardowa trasa multipart z plikiem PDF `file`, plikami podpisu `sig0`, `sig1` oraz tablicą JSON `placements` |
 | `pdf-to-text` | PDF do tekstu | - |
 | `pdf-to-word` | PDF do Word | - |
-| `pdf-metadata` | Metadane PDF | `title`, `author`, `subject`, `keywords` |
+| `pdf-metadata` | Metadane PDF | `title`, `author`, `subject`, `keywords`, `stripAll` |
 | `convert-document` | Konwersja dokumentu | `format` (docx/odt/rtf/txt) |
 | `convert-presentation` | Konwersja prezentacji | `format` (pptx/odp) |
 | `convert-spreadsheet` | Konwersja arkusza kalkulacyjnego | `format` (xlsx/ods/csv) |
