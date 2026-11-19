@@ -1,7 +1,7 @@
 ---
 description: "Tài liệu tham khảo REST API đầy đủ. Endpoint công cụ, xử lý hàng loạt, pipeline, thư viện tệp, xác thực, nhóm và các thao tác quản trị."
-i18n_output_hash: cb5150884e2c
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 6185777d812a
+i18n_source_hash: feb082adc9ef
 i18n_provenance: human
 ---
 
@@ -396,6 +396,7 @@ Chụp một trang web thành ảnh. Khác với các công cụ khác, endpoint
 | `devicePreset` | string | `"desktop"` | `desktop`, `tablet`, `mobile`, `custom` |
 | `viewportWidth` | number | `1280` | Chiều rộng viewport tùy chỉnh 320-3840 |
 | `viewportHeight` | number | `720` | Chiều cao viewport tùy chỉnh 320-2160 |
+| `clientJobId` | string | (tự tạo) | ID công việc của riêng bạn, để mở luồng tiến trình trước khi có phản hồi |
 
 **Ví dụ:**
 
@@ -416,6 +417,8 @@ curl -X POST http://localhost:1349/api/v1/tools/image/html-to-image \
   "processedSize": 54321
 }
 ```
+
+Việc chụp chạy như một công việc trong hàng đợi. Nếu hoàn tất trong khoảng chờ đồng bộ, bạn nhận kết quả ở trên với `200`. Lần chụp chậm hơn trả về `202` cùng `{"jobId":"...","async":true}`; hãy theo dõi như mô tả trong [Theo dõi tiến trình](#progress-tracking). Đến phiên bản 2.3.0, endpoint này luôn chờ và trả về `200`, vì vậy các script chỉ xử lý `200` cũng nên xử lý `202`.
 
 ### Route con của công cụ {#tool-sub-routes}
 

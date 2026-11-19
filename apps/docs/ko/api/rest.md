@@ -1,7 +1,7 @@
 ---
 description: "전체 REST API 레퍼런스. 도구 엔드포인트, 배치 처리, 파이프라인, 파일 라이브러리, 인증, 팀, 관리 작업."
-i18n_output_hash: 4baf9d79932f
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 195fb396051b
+i18n_source_hash: feb082adc9ef
 i18n_provenance: human
 ---
 
@@ -396,6 +396,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `devicePreset` | string | `"desktop"` | `desktop`, `tablet`, `mobile`, `custom` |
 | `viewportWidth` | number | `1280` | 커스텀 뷰포트 너비 320-3840 |
 | `viewportHeight` | number | `720` | 커스텀 뷰포트 높이 320-2160 |
+| `clientJobId` | string | (자동 생성) | 직접 지정하는 작업 ID로, 응답이 오기 전에 진행 상황 스트림을 열 수 있습니다 |
 
 **예시:**
 
@@ -416,6 +417,8 @@ curl -X POST http://localhost:1349/api/v1/tools/image/html-to-image \
   "processedSize": 54321
 }
 ```
+
+캡처는 대기열 작업으로 실행됩니다. 동기 대기 시간 안에 끝나면 위의 결과를 `200`으로 받습니다. 더 오래 걸리는 캡처는 `{"jobId":"...","async":true}`와 함께 `202`를 반환합니다. [진행 상황 추적](#progress-tracking)에 설명된 대로 추적하세요. 2.3.0까지 이 엔드포인트는 항상 완료를 기다린 뒤 `200`을 반환했으므로, `200`만 처리하는 스크립트는 `202`도 처리해야 합니다.
 
 ### 도구 하위 경로 {#tool-sub-routes}
 

@@ -1,7 +1,7 @@
 ---
 description: "Eksiksiz REST API başvurusu. Araç uç noktaları, toplu işleme, işlem hatları, dosya kitaplığı, kimlik doğrulama, ekipler ve yönetici işlemleri."
-i18n_output_hash: 70e53ad992e8
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 2e1c50f05fab
+i18n_source_hash: feb082adc9ef
 i18n_provenance: human
 ---
 
@@ -396,6 +396,7 @@ Bir web sayfasını görüntü olarak yakalayın. Diğer araçların aksine bu u
 | `devicePreset` | string | `"desktop"` | `desktop`, `tablet`, `mobile`, `custom` |
 | `viewportWidth` | number | `1280` | Özel görüntü alanı genişliği 320-3840 |
 | `viewportHeight` | number | `720` | Özel görüntü alanı yüksekliği 320-2160 |
+| `clientJobId` | string | (otomatik) | Kendi iş kimliğiniz; böylece yanıt gelmeden ilerleme akışını açabilirsiniz |
 
 **Örnek:**
 
@@ -416,6 +417,8 @@ curl -X POST http://localhost:1349/api/v1/tools/image/html-to-image \
   "processedSize": 54321
 }
 ```
+
+Yakalama, kuyruktaki bir iş olarak çalışır. Eşzamanlı bekleme süresi içinde biterse yukarıdaki sonucu `200` ile alırsınız. Daha yavaş bir yakalama `{"jobId":"...","async":true}` ile `202` döndürür; [İlerleme Takibi](#progress-tracking) bölümünde anlatıldığı gibi izleyin. 2.3.0 sürümüne kadar bu uç nokta her zaman bekleyip `200` döndürüyordu; bu yüzden yalnızca `200` işleyen betikler `202` de işlemelidir.
 
 ### Araç Alt Yolları {#tool-sub-routes}
 

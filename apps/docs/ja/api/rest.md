@@ -1,7 +1,7 @@
 ---
 description: "完全な REST API リファレンス。ツールエンドポイント、バッチ処理、パイプライン、ファイルライブラリ、認証、チーム、管理者操作。"
-i18n_output_hash: 8c5d97092eb1
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 1423e7e7e6bb
+i18n_source_hash: feb082adc9ef
 i18n_provenance: human
 ---
 
@@ -396,6 +396,7 @@ Web ページを画像としてキャプチャします。他のツールと異�
 | `devicePreset` | string | `"desktop"` | `desktop`, `tablet`, `mobile`, `custom` |
 | `viewportWidth` | number | `1280` | カスタムビューポート幅 320-3840 |
 | `viewportHeight` | number | `720` | カスタムビューポート高さ 320-2160 |
+| `clientJobId` | string | （自動生成） | 独自のジョブ ID。レスポンスが届く前に進捗ストリームを開けます |
 
 **例:**
 
@@ -416,6 +417,8 @@ curl -X POST http://localhost:1349/api/v1/tools/image/html-to-image \
   "processedSize": 54321
 }
 ```
+
+キャプチャはキューに入ったジョブとして実行されます。同期待機時間内に完了すると、上記の結果が `200` で返ります。時間のかかるキャプチャは `{"jobId":"...","async":true}` とともに `202` を返します。[進捗トラッキング](#progress-tracking) の説明に従って追跡してください。2.3.0 まではこのエンドポイントは常に完了を待って `200` を返していたため、`200` だけを処理するスクリプトは `202` も処理する必要があります。
 
 ### ツールのサブルート {#tool-sub-routes}
 

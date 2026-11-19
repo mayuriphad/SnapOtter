@@ -1,7 +1,7 @@
 ---
 description: "เอกสารอ้างอิง REST API ฉบับสมบูรณ์ เอนด์พอยต์ของเครื่องมือ การประมวลผลแบบแบตช์ ไปป์ไลน์ คลังไฟล์ การยืนยันตัวตน ทีม และการดำเนินงานของผู้ดูแลระบบ"
-i18n_output_hash: 160370d9a3a2
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 508a8834583f
+i18n_source_hash: feb082adc9ef
 i18n_provenance: human
 ---
 
@@ -396,6 +396,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `devicePreset` | string | `"desktop"` | `desktop`, `tablet`, `mobile`, `custom` |
 | `viewportWidth` | number | `1280` | ความกว้าง viewport กำหนดเอง 320-3840 |
 | `viewportHeight` | number | `720` | ความสูง viewport กำหนดเอง 320-2160 |
+| `clientJobId` | string | (สร้างอัตโนมัติ) | รหัสงานของคุณเอง เพื่อให้เปิดสตรีมความคืบหน้าได้ก่อนที่คำตอบจะมาถึง |
 
 **ตัวอย่าง:**
 
@@ -416,6 +417,8 @@ curl -X POST http://localhost:1349/api/v1/tools/image/html-to-image \
   "processedSize": 54321
 }
 ```
+
+การจับภาพทำงานเป็นงานในคิว หากเสร็จภายในช่วงเวลารอแบบซิงโครนัส คุณจะได้รับผลลัพธ์ด้านบนพร้อม `200` การจับภาพที่ช้ากว่าจะตอบ `202` พร้อม `{"jobId":"...","async":true}` ให้ติดตามตามที่อธิบายไว้ใน [การติดตามความคืบหน้า](#progress-tracking) จนถึงเวอร์ชัน 2.3.0 เอนด์พอยต์นี้จะรอเสมอและตอบ `200` ดังนั้นสคริปต์ที่รองรับเฉพาะ `200` ควรรองรับ `202` ด้วย
 
 ### เส้นทางย่อยของเครื่องมือ {#tool-sub-routes}
 

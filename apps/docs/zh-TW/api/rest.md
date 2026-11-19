@@ -1,7 +1,7 @@
 ---
 description: "完整的 REST API 參考。工具端點、批次處理、管線、檔案庫、驗證、團隊與管理操作。"
-i18n_output_hash: c49b939c4c6e
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: d200875d8ebb
+i18n_source_hash: feb082adc9ef
 i18n_provenance: human
 ---
 
@@ -396,6 +396,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `devicePreset` | string | `"desktop"` | `desktop`、`tablet`、`mobile`、`custom` |
 | `viewportWidth` | number | `1280` | 自訂視窗寬度 320-3840 |
 | `viewportHeight` | number | `720` | 自訂視窗高度 320-2160 |
+| `clientJobId` | string | （自動產生） | 你自己的作業 ID，以便在回應抵達前開啟進度串流 |
 
 **範例：**
 
@@ -416,6 +417,8 @@ curl -X POST http://localhost:1349/api/v1/tools/image/html-to-image \
   "processedSize": 54321
 }
 ```
+
+截圖以排隊作業的方式執行。如果在同步等待時間內完成，你會收到上面的結果與 `200`。較慢的截圖會回傳 `202` 與 `{"jobId":"...","async":true}`；請依照[進度追蹤](#progress-tracking)中的說明追蹤。在 2.3.0 及更早版本中，此端點一律等待完成並回傳 `200`，因此只處理 `200` 的腳本也應處理 `202`。
 
 ### 工具子路由 {#tool-sub-routes}
 

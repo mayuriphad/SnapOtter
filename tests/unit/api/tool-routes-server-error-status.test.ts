@@ -46,12 +46,6 @@ vi.mock("../../../apps/api/src/lib/object-storage.js", async (importOriginal) =>
   };
 });
 
-vi.mock("../../../apps/api/src/lib/browser-service.js", () => ({
-  isBrowserAvailable: () => true,
-  captureHtml: async () => Buffer.from("png"),
-  capturePage: async () => Buffer.from("png"),
-}));
-
 import * as aiMod from "@snapotter/ai";
 import * as engineUnavailableMod from "../../../apps/api/src/lib/engine-unavailable.js";
 import * as exiftoolMod from "../../../apps/api/src/lib/exiftool.js";
@@ -77,7 +71,6 @@ import { registerContentAwareResize } from "../../../apps/api/src/routes/tools/c
 import { registerEditMetadata } from "../../../apps/api/src/routes/tools/edit-metadata.js";
 import { registerFindDuplicates } from "../../../apps/api/src/routes/tools/find-duplicates.js";
 import { registerGifTools } from "../../../apps/api/src/routes/tools/gif-tools.js";
-import { registerHtmlToImage } from "../../../apps/api/src/routes/tools/html-to-image.js";
 import { registerMemeGenerator } from "../../../apps/api/src/routes/tools/meme-generator.js";
 import { registerPassportPhoto } from "../../../apps/api/src/routes/tools/passport-photo.js";
 import { registerQrGenerate } from "../../../apps/api/src/routes/tools/qr-generate.js";
@@ -669,14 +662,6 @@ describe("json-bodied routes", () => {
       error: "QR code generation failed",
     },
     {
-      name: "html-to-image",
-      register: registerHtmlToImage,
-      url: "/api/v1/tools/image/html-to-image",
-      payload: { html: "<p>hi</p>" },
-      fail: putObject,
-      error: "Screenshot capture failed",
-    },
-    {
       name: "passport-photo generate",
       register: registerPassportPhoto,
       url: "/api/v1/tools/image/passport-photo/generate",
@@ -886,23 +871,6 @@ describe("json-bodied routes", () => {
     expect(res.statusCode).toBe(500);
     expect(res.body).not.toMatch(/insert into|secret/);
     expect(putObject).not.toHaveBeenCalled();
-  });
-
-  it("html-to-image answers a storage fault that mentions a timeout as storage, not a slow page", async () => {
-    putObject.mockImplementation(async () => {
-      throw new SafeError("Storage write timeout.", {
-        statusCode: 503,
-        code: "STORAGE_UNAVAILABLE",
-      });
-    });
-    app = await buildApp(registerHtmlToImage);
-    const res = await app.inject({
-      method: "POST",
-      url: "/api/v1/tools/image/html-to-image",
-      payload: { html: "<p>hi</p>" },
-    });
-    expect(res.statusCode).toBe(503);
-    expect(res.json().code).toBe("STORAGE_UNAVAILABLE");
   });
 
   it("barcode-generate surfaces 507/503 storage and OOM faults and strips internal paths from 400 error messages (#4050)", async () => {

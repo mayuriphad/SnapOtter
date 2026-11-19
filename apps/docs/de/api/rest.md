@@ -1,7 +1,7 @@
 ---
 description: "Vollständige REST-API-Referenz. Tool-Endpunkte, Stapelverarbeitung, Pipelines, Dateibibliothek, Authentifizierung, Teams und Admin-Operationen."
-i18n_output_hash: 75bf1a2260d1
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 21aeba07a353
+i18n_source_hash: feb082adc9ef
 i18n_provenance: human
 ---
 
@@ -396,6 +396,7 @@ Eine Webseite als Bild erfassen. Anders als andere Tools akzeptiert dieser Endpu
 | `devicePreset` | string | `"desktop"` | `desktop`, `tablet`, `mobile`, `custom` |
 | `viewportWidth` | number | `1280` | Benutzerdefinierte Viewport-Breite 320-3840 |
 | `viewportHeight` | number | `720` | Benutzerdefinierte Viewport-Höhe 320-2160 |
+| `clientJobId` | string | (generiert) | Eigene Job-ID, damit Sie den Fortschrittsstream öffnen können, bevor die Antwort eintrifft |
 
 **Beispiel:**
 
@@ -416,6 +417,8 @@ curl -X POST http://localhost:1349/api/v1/tools/image/html-to-image \
   "processedSize": 54321
 }
 ```
+
+Die Aufnahme läuft als Job in der Warteschlange. Ist sie innerhalb des synchronen Wartefensters fertig, erhalten Sie das obige Ergebnis mit `200`. Eine langsamere Aufnahme antwortet mit `202` und `{"jobId":"...","async":true}`; verfolgen Sie sie wie unter [Fortschrittsverfolgung](#progress-tracking) beschrieben. Bis Version 2.3.0 hat dieser Endpunkt immer gewartet und mit `200` geantwortet. Skripte, die nur `200` behandeln, sollten daher auch `202` behandeln.
 
 ### Tool-Unterrouten {#tool-sub-routes}
 

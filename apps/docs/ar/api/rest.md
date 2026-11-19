@@ -1,7 +1,7 @@
 ---
 description: "مرجع REST API الكامل. نقاط نهاية الأدوات، والمعالجة الدفعية، وخطوط المعالجة، ومكتبة الملفات، والمصادقة، والفرق، وعمليات الإدارة."
-i18n_output_hash: 146f4c35be04
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 6d68e1113abb
+i18n_source_hash: feb082adc9ef
 i18n_provenance: human
 ---
 
@@ -396,6 +396,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `devicePreset` | سلسلة | `"desktop"` | `desktop`، `tablet`، `mobile`، `custom` |
 | `viewportWidth` | رقم | `1280` | عرض إطار عرض مخصص 320-3840 |
 | `viewportHeight` | رقم | `720` | ارتفاع إطار عرض مخصص 320-2160 |
+| `clientJobId` | string | (يُولَّد تلقائيًا) | معرّف مهمة من اختيارك، لتتمكن من فتح بث التقدم قبل وصول الرد |
 
 **مثال:**
 
@@ -416,6 +417,8 @@ curl -X POST http://localhost:1349/api/v1/tools/image/html-to-image \
   "processedSize": 54321
 }
 ```
+
+يعمل الالتقاط كمهمة في قائمة الانتظار. إذا انتهى ضمن نافذة الانتظار المتزامن، فستحصل على النتيجة أعلاه مع `200`. أما الالتقاط الأبطأ فيرد بـ `202` مع `{"jobId":"...","async":true}`؛ تابعه كما هو موضح في [تتبع التقدم](#progress-tracking). حتى الإصدار 2.3.0 كانت نقطة النهاية هذه تنتظر دائمًا وترد بـ `200`، لذا يجب على السكربتات التي تتعامل مع `200` فقط أن تتعامل أيضًا مع `202`.
 
 ### المسارات الفرعية للأدوات {#tool-sub-routes}
 

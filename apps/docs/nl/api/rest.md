@@ -1,7 +1,7 @@
 ---
 description: "Volledige REST API-referentie. Tool-endpoints, batchverwerking, pipelines, bestandsbibliotheek, authenticatie, teams en beheerbewerkingen."
-i18n_output_hash: ed9a62f2b460
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: e9bad23aea00
+i18n_source_hash: feb082adc9ef
 i18n_provenance: human
 ---
 
@@ -396,6 +396,7 @@ Leg een webpagina vast als afbeelding. Anders dan andere tools accepteert dit en
 | `devicePreset` | string | `"desktop"` | `desktop`, `tablet`, `mobile`, `custom` |
 | `viewportWidth` | number | `1280` | Aangepaste viewport-breedte 320-3840 |
 | `viewportHeight` | number | `720` | Aangepaste viewport-hoogte 320-2160 |
+| `clientJobId` | string | (gegenereerd) | Uw eigen job-ID, zodat u de voortgangsstream kunt openen voordat het antwoord binnenkomt |
 
 **Voorbeeld:**
 
@@ -416,6 +417,8 @@ curl -X POST http://localhost:1349/api/v1/tools/image/html-to-image \
   "processedSize": 54321
 }
 ```
+
+De opname draait als job in de wachtrij. Is die klaar binnen het synchrone wachtvenster, dan krijgt u het resultaat hierboven met `200`. Een tragere opname antwoordt `202` met `{"jobId":"...","async":true}`; volg die zoals beschreven in [Voortgang volgen](#progress-tracking). Tot en met 2.3.0 wachtte dit endpoint altijd en antwoordde het `200`, dus scripts die alleen `200` afhandelen, moeten ook `202` afhandelen.
 
 ### Tool-subroutes {#tool-sub-routes}
 
