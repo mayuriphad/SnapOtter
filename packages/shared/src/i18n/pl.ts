@@ -3961,6 +3961,8 @@ export const pl: TranslationKeys = {
       scannedHint:
         "Ten PDF jest skanem, więc nie ma tekstu do wyodrębnienia. OCR może go odczytać, ale trwa to dłużej i wymaga zainstalowanego pakietu AI dla OCR.",
       runOcr: "Uruchom OCR dla tego PDF-a",
+      unreadablePages:
+        "{count} z {total} stron nie ma czytelnej warstwy tekstu, więc ich część pliku .txt może być nieczytelna. OCR może odczytać te strony.",
     },
     "pdf-to-word": {
       hint: "Najlepiej dla PDF tekstowych; zeskanowane strony wymagają OCR",

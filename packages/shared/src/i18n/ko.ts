@@ -3880,6 +3880,8 @@ export const ko: TranslationKeys = {
       scannedHint:
         "이 PDF는 스캔본이라 추출할 텍스트가 없습니다. OCR로 읽을 수 있지만 시간이 더 걸리고 OCR AI 번들이 설치되어 있어야 합니다.",
       runOcr: "이 PDF에 OCR 실행",
+      unreadablePages:
+        "{total}페이지 중 {count}페이지에 읽을 수 있는 텍스트 레이어가 없어 .txt의 해당 부분이 깨져 보일 수 있습니다. OCR로 이 페이지들을 읽을 수 있습니다.",
     },
     "pdf-to-word": {
       hint: "텍스트 기반 PDF에 적합합니다. 스캔된 페이지는 OCR이 필요합니다",

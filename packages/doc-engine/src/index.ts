@@ -50,6 +50,7 @@ export {
 export {
   type DocsScriptOptions,
   htmlToPdfPy,
+  type PdfTextResult,
   pdfFlattenPy,
   pdfMetadataGetPy,
   pdfMetadataSetPy,

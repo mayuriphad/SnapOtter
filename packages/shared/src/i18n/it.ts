@@ -3961,6 +3961,8 @@ export const it: TranslationKeys = {
       scannedHint:
         "Questo PDF è una scansione, quindi non c'è testo da estrarre. L'OCR può leggerlo, ma richiede più tempo e il pacchetto IA per l'OCR installato.",
       runOcr: "Esegui l'OCR su questo PDF",
+      unreadablePages:
+        "{count} pagine su {total} non hanno un livello di testo leggibile, quindi la loro parte del .txt potrebbe risultare illeggibile. L'OCR può leggere quelle pagine.",
     },
     "pdf-to-word": {
       hint: "Ideale per PDF basati su testo; le pagine scansionate richiedono OCR",
