@@ -1232,6 +1232,11 @@ export const uk: TranslationKeys = {
       name: "XML у CSV",
       description: "Витягти повторювані елементи з XML у таблицю CSV",
     },
+    "convert-case": {
+      name: "Змінити регістр",
+      description:
+        "Перетворіть текст на ВЕРХНІЙ, нижній регістр, регістр заголовка, речення та інші",
+    },
     "create-zip": {
       name: "Створення ZIP",
       description: "Запакувати кілька файлів в один архів ZIP",
@@ -4053,6 +4058,25 @@ export const uk: TranslationKeys = {
       submit: "Конвертувати",
       submitBatch: "Конвертувати ({count} файлів)",
       progressLabel: "Конвертація",
+    },
+    "convert-case": {
+      input: "Текст",
+      placeholder: "Вставте або введіть текст",
+      chooseCase: "Перетворити на",
+      result: "Результат",
+      modes: {
+        upper: "ВЕРХНІЙ РЕГІСТР",
+        lower: "нижній регістр",
+        sentence: "Як у реченні",
+        title: "Як У Заголовку",
+        capitalized: "Кожне Слово З Великої",
+        inverse: "іНВЕРСІЯ рЕГІСТРУ",
+        alternating: "чЕрГуВаНнЯ",
+        camel: "camelCase",
+        pascal: "PascalCase",
+        snake: "snake_case",
+        kebab: "kebab-case",
+      },
     },
     "create-zip": {
       submit: "Створити ZIP",

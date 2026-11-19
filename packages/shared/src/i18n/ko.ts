@@ -1177,6 +1177,10 @@ export const ko: TranslationKeys = {
       name: "XML을 CSV로",
       description: "XML에서 반복 요소를 CSV 테이블로 추출",
     },
+    "convert-case": {
+      name: "대소문자 변환",
+      description: "텍스트를 대문자, 소문자, 제목 형식, 문장 형식 등으로 변환",
+    },
     "create-zip": {
       name: "ZIP 만들기",
       description: "여러 파일을 하나의 ZIP 아카이브로 묶기",
@@ -3973,6 +3977,25 @@ export const ko: TranslationKeys = {
       submit: "변환",
       submitBatch: "변환 ({count}개 파일)",
       progressLabel: "변환 중",
+    },
+    "convert-case": {
+      input: "텍스트",
+      placeholder: "텍스트를 붙여넣거나 입력하세요",
+      chooseCase: "변환 형식",
+      result: "결과",
+      modes: {
+        upper: "대문자 (UPPER)",
+        lower: "소문자 (lower)",
+        sentence: "문장 형식 (Sentence)",
+        title: "제목 형식 (Title)",
+        capitalized: "단어 첫 글자 대문자 (Capitalized)",
+        inverse: "대소문자 반전 (iNVERSE)",
+        alternating: "대소문자 번갈아 (aLtErNaTiNg)",
+        camel: "camelCase",
+        pascal: "PascalCase",
+        snake: "snake_case",
+        kebab: "kebab-case",
+      },
     },
     "create-zip": {
       submit: "ZIP 생성",

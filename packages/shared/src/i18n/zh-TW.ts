@@ -1004,6 +1004,10 @@ export const zhTW: TranslationKeys = {
       name: "XML 轉 CSV",
       description: "從 XML 中提取重複元素為 CSV 表格",
     },
+    "convert-case": {
+      name: "大小寫轉換",
+      description: "將文字轉換為大寫、小寫、標題格式、句子格式等",
+    },
     "create-zip": {
       name: "建立 ZIP",
       description: "將多個檔案打包為單一 ZIP 壓縮檔",
@@ -3770,6 +3774,25 @@ export const zhTW: TranslationKeys = {
       submit: "轉換",
       submitBatch: "轉換（{count} 個檔案）",
       progressLabel: "正在轉換",
+    },
+    "convert-case": {
+      input: "文字",
+      placeholder: "貼上或輸入文字",
+      chooseCase: "轉換為",
+      result: "結果",
+      modes: {
+        upper: "全部大寫 (UPPER)",
+        lower: "全部小寫 (lower)",
+        sentence: "句首大寫 (Sentence)",
+        title: "標題格式 (Title)",
+        capitalized: "每個單字首字母大寫 (Capitalized)",
+        inverse: "大小寫反轉 (iNVERSE)",
+        alternating: "大小寫交替 (aLtErNaTiNg)",
+        camel: "camelCase",
+        pascal: "PascalCase",
+        snake: "snake_case",
+        kebab: "kebab-case",
+      },
     },
     "create-zip": {
       submit: "建立 ZIP",

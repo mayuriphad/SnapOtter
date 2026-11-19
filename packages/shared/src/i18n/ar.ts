@@ -1219,6 +1219,10 @@ export const ar: TranslationKeys = {
       name: "XML إلى CSV",
       description: "استخراج العناصر المتكررة من XML إلى جدول CSV",
     },
+    "convert-case": {
+      name: "تحويل حالة الأحرف",
+      description: "حوّل النص إلى أحرف كبيرة أو صغيرة أو حالة العنوان أو الجملة وغيرها",
+    },
     "create-zip": {
       name: "إنشاء ZIP",
       description: "تجميع ملفات متعددة في أرشيف ZIP واحد",
@@ -4017,6 +4021,25 @@ export const ar: TranslationKeys = {
       submit: "تحويل",
       submitBatch: "تحويل ({count} ملفات)",
       progressLabel: "جارٍ التحويل",
+    },
+    "convert-case": {
+      input: "النص",
+      placeholder: "الصق النص أو اكتبه",
+      chooseCase: "تحويل إلى",
+      result: "النتيجة",
+      modes: {
+        upper: "أحرف كبيرة (UPPER)",
+        lower: "أحرف صغيرة (lower)",
+        sentence: "حالة الجملة (Sentence)",
+        title: "حالة العنوان (Title)",
+        capitalized: "أول حرف كبير (Capitalized)",
+        inverse: "عكس الحالة (iNVERSE)",
+        alternating: "تبديل الحالة (aLtErNaTiNg)",
+        camel: "camelCase",
+        pascal: "PascalCase",
+        snake: "snake_case",
+        kebab: "kebab-case",
+      },
     },
     "create-zip": {
       submit: "إنشاء ZIP",

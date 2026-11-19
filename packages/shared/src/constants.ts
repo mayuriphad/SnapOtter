@@ -37,6 +37,13 @@ export const MAX_RESIZE_PERCENTAGE = 1000;
  */
 export const MAX_CONTENT_AWARE_RESIZE_PIXELS = 25_000_000;
 
+/**
+ * Most characters the convert-case tool takes in one request: room for a long
+ * pasted document while keeping the answer small enough for a textarea. The
+ * route enforces it; the panel caps its input at the same length.
+ */
+export const CONVERT_CASE_MAX_CHARS = 1_000_000;
+
 export const CATEGORIES: CategoryInfo[] = [
   // Image
   { id: "essentials", name: "Essentials", icon: "Layers", color: "#3B82F6" },

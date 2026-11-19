@@ -93,6 +93,26 @@ export const FILE_TOOLS: Tool[] = [
     acceptedInputs: [".xml"],
     executionHint: "fast",
   },
+  {
+    id: "convert-case",
+    name: "Convert Case",
+    description: "Change text to UPPER, lower, Title, Sentence case and more",
+    keywords: [
+      "uppercase",
+      "lowercase",
+      "title case",
+      "sentence case",
+      "camelcase",
+      "snake case",
+      "text",
+    ],
+    category: "data",
+    icon: "CaseSensitive",
+    route: "/convert-case",
+    modality: "file",
+    acceptedInputs: [],
+    executionHint: "fast",
+  },
   // Archives
   {
     id: "create-zip",

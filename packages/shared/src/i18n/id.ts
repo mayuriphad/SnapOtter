@@ -1230,6 +1230,11 @@ export const id: TranslationKeys = {
       name: "XML ke CSV",
       description: "Ekstrak elemen berulang dari XML ke tabel CSV",
     },
+    "convert-case": {
+      name: "Ubah Huruf Besar/Kecil",
+      description:
+        "Ubah teks menjadi HURUF BESAR, huruf kecil, Huruf Judul, Huruf kalimat, dan lainnya",
+    },
     "create-zip": {
       name: "Buat ZIP",
       description: "Gabungkan beberapa file menjadi satu arsip ZIP",
@@ -4046,6 +4051,25 @@ export const id: TranslationKeys = {
       submit: "Konversi",
       submitBatch: "Konversi ({count} file)",
       progressLabel: "Mengonversi",
+    },
+    "convert-case": {
+      input: "Teks",
+      placeholder: "Tempel atau ketik teks",
+      chooseCase: "Ubah ke",
+      result: "Hasil",
+      modes: {
+        upper: "HURUF BESAR",
+        lower: "huruf kecil",
+        sentence: "Huruf kalimat",
+        title: "Huruf Judul",
+        capitalized: "Setiap Kata Kapital",
+        inverse: "hURUF tERBALIK",
+        alternating: "hUrUf BeRsElInG",
+        camel: "camelCase",
+        pascal: "PascalCase",
+        snake: "snake_case",
+        kebab: "kebab-case",
+      },
     },
     "create-zip": {
       submit: "Buat ZIP",

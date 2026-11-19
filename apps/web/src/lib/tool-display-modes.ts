@@ -208,6 +208,7 @@ export const TOOL_DISPLAY_MODES: Record<string, DisplayMode> = {
   "merge-csvs": "no-comparison",
   "yaml-json": "no-comparison",
   "xml-to-csv": "no-comparison",
+  "convert-case": "no-dropzone",
   "create-zip": "no-comparison",
   "extract-zip": "no-comparison",
 };

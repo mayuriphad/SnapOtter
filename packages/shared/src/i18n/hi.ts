@@ -1051,6 +1051,10 @@ export const hi: TranslationKeys = {
       name: "XML से CSV",
       description: "XML से दोहराए जाने वाले एलीमेंट निकालकर CSV टेबल बनाएँ",
     },
+    "convert-case": {
+      name: "केस बदलें",
+      description: "टेक्स्ट को UPPER, lower, Title, Sentence केस और अन्य में बदलें",
+    },
     "create-zip": {
       name: "ZIP बनाएँ",
       description: "कई फ़ाइलों को एक ZIP आर्काइव में बंडल करें",
@@ -3843,6 +3847,25 @@ export const hi: TranslationKeys = {
       submit: "रूपांतरित करें",
       submitBatch: "रूपांतरित करें ({count} फ़ाइलें)",
       progressLabel: "रूपांतरित हो रहा है",
+    },
+    "convert-case": {
+      input: "टेक्स्ट",
+      placeholder: "टेक्स्ट पेस्ट करें या लिखें",
+      chooseCase: "इसमें बदलें",
+      result: "परिणाम",
+      modes: {
+        upper: "सभी बड़े अक्षर (UPPER)",
+        lower: "सभी छोटे अक्षर (lower)",
+        sentence: "वाक्य केस (Sentence)",
+        title: "शीर्षक केस (Title)",
+        capitalized: "हर शब्द बड़े अक्षर से (Capitalized)",
+        inverse: "उल्टा केस (iNVERSE)",
+        alternating: "बारी-बारी केस (aLtErNaTiNg)",
+        camel: "camelCase",
+        pascal: "PascalCase",
+        snake: "snake_case",
+        kebab: "kebab-case",
+      },
     },
     "create-zip": {
       submit: "ZIP बनाएँ",

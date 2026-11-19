@@ -1193,6 +1193,10 @@ export const ja: TranslationKeys = {
       name: "XML を CSV に変換",
       description: "XML から繰り返し要素を CSV テーブルに抽出",
     },
+    "convert-case": {
+      name: "大文字・小文字変換",
+      description: "テキストを大文字、小文字、タイトルケース、文頭大文字などに変換",
+    },
     "create-zip": {
       name: "ZIP 作成",
       description: "複数のファイルを1つの ZIP アーカイブにまとめる",
@@ -3997,6 +4001,25 @@ export const ja: TranslationKeys = {
       submit: "変換",
       submitBatch: "変換 ({count}ファイル)",
       progressLabel: "変換中",
+    },
+    "convert-case": {
+      input: "テキスト",
+      placeholder: "テキストを貼り付けるか入力",
+      chooseCase: "変換先",
+      result: "結果",
+      modes: {
+        upper: "大文字 (UPPER)",
+        lower: "小文字 (lower)",
+        sentence: "文頭を大文字 (Sentence)",
+        title: "タイトルケース (Title)",
+        capitalized: "各単語の先頭を大文字 (Capitalized)",
+        inverse: "大文字と小文字を反転 (iNVERSE)",
+        alternating: "大文字と小文字を交互に (aLtErNaTiNg)",
+        camel: "camelCase",
+        pascal: "PascalCase",
+        snake: "snake_case",
+        kebab: "kebab-case",
+      },
     },
     "create-zip": {
       submit: "ZIPを作成",

@@ -1218,6 +1218,10 @@ export const es: TranslationKeys = {
       name: "XML a CSV",
       description: "Extrae elementos repetitivos de XML a una tabla CSV",
     },
+    "convert-case": {
+      name: "Convertir mayúsculas y minúsculas",
+      description: "Cambia el texto a MAYÚSCULAS, minúsculas, tipo título, tipo oración y más",
+    },
     "create-zip": {
       name: "Crear ZIP",
       description: "Agrupa varios archivos en un solo archivo ZIP",
@@ -4041,6 +4045,25 @@ export const es: TranslationKeys = {
       submit: "Convertir",
       submitBatch: "Convertir ({count} archivos)",
       progressLabel: "Convirtiendo",
+    },
+    "convert-case": {
+      input: "Texto",
+      placeholder: "Pega o escribe el texto",
+      chooseCase: "Convertir a",
+      result: "Resultado",
+      modes: {
+        upper: "MAYÚSCULAS",
+        lower: "minúsculas",
+        sentence: "Tipo oración",
+        title: "Tipo Título",
+        capitalized: "Cada Palabra En Mayúscula",
+        inverse: "iNVERTIR mAYÚSCULAS",
+        alternating: "aLtErNaDo",
+        camel: "camelCase",
+        pascal: "PascalCase",
+        snake: "snake_case",
+        kebab: "kebab-case",
+      },
     },
     "create-zip": {
       submit: "Crear ZIP",

@@ -1232,6 +1232,11 @@ export const tr: TranslationKeys = {
       name: "XML'den CSV'ye",
       description: "XML'deki tekrarlayan öğeleri CSV tablosuna çıkar",
     },
+    "convert-case": {
+      name: "Büyük/Küçük Harf Dönüştür",
+      description:
+        "Metni BÜYÜK, küçük harfe, başlık düzenine, cümle düzenine ve daha fazlasına çevirin",
+    },
     "create-zip": {
       name: "ZIP Oluştur",
       description: "Birden fazla dosyayı tek bir ZIP arşivinde paketle",
@@ -4048,6 +4053,25 @@ export const tr: TranslationKeys = {
       submit: "Dönüştür",
       submitBatch: "Dönüştür ({count} dosya)",
       progressLabel: "Dönüştürülüyor",
+    },
+    "convert-case": {
+      input: "Metin",
+      placeholder: "Metin yapıştırın veya yazın",
+      chooseCase: "Şuna dönüştür",
+      result: "Sonuç",
+      modes: {
+        upper: "BÜYÜK HARF",
+        lower: "küçük harf",
+        sentence: "Cümle düzeni",
+        title: "Başlık Düzeni",
+        capitalized: "Her Kelime Büyük Harfle",
+        inverse: "tERS hARF",
+        alternating: "dEğİşİmLi",
+        camel: "camelCase",
+        pascal: "PascalCase",
+        snake: "snake_case",
+        kebab: "kebab-case",
+      },
     },
     "create-zip": {
       submit: "ZIP Oluştur",
