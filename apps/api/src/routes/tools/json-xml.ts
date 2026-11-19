@@ -1,6 +1,7 @@
 import { XMLBuilder, XMLParser } from "fast-xml-parser";
 import type { FastifyInstance } from "fastify";
 import { z } from "zod";
+import { assertWellFormedXml } from "../../lib/well-formed-xml.js";
 import { InputValidationError } from "../../modality/contract.js";
 import { createToolRoute } from "../tool-factory.js";
 
@@ -62,6 +63,7 @@ export function registerJsonXml(app: FastifyInstance) {
 
       if (lower.endsWith(".xml")) {
         // xml -> json
+        assertWellFormedXml(text);
         const parser = new XMLParser({ ignoreAttributes: false, maxNestedTags: MAX_NESTING });
         let parsed: unknown;
         try {
