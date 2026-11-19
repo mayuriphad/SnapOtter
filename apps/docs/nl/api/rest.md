@@ -1,7 +1,7 @@
 ---
 description: "Volledige REST API-referentie. Tool-endpoints, batchverwerking, pipelines, bestandsbibliotheek, authenticatie, teams en beheerbewerkingen."
-i18n_output_hash: ed9a62f2b460
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: c2891a55dd3f
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -375,6 +375,7 @@ Alle AI-tools draaien op je eigen hardware: standaard op CPU, of op NVIDIA CUDA 
 | `merge-csvs` | CSV's samenvoegen | - (meerdere bestanden, overeenkomende kolommen) |
 | `yaml-json` | YAML / JSON | - (bidirectioneel) |
 | `xml-to-csv` | XML naar CSV | - (vindt automatisch herhalende elementen) |
+| `convert-font` | Lettertype converteren | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel naar CSV | speciale conversiepreset ondersteund door `convert-spreadsheet` |
 | `create-zip` | ZIP maken | - (meerdere bestanden, 2-50 bestanden) |
 | `extract-zip` | ZIP uitpakken | - (beschermd tegen zip-bommen) |

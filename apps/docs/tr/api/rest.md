@@ -1,7 +1,7 @@
 ---
 description: "Eksiksiz REST API başvurusu. Araç uç noktaları, toplu işleme, işlem hatları, dosya kitaplığı, kimlik doğrulama, ekipler ve yönetici işlemleri."
-i18n_output_hash: 70e53ad992e8
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 1c2cc2da26c0
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -375,6 +375,7 @@ Tüm yapay zeka araçları kendi donanımınızda çalışır: varsayılan olara
 | `merge-csvs` | CSV'leri Birleştir | - (çok dosyalı, eşleşen sütunlar) |
 | `yaml-json` | YAML / JSON | - (çift yönlü) |
 | `xml-to-csv` | XML'den CSV'ye | - (yinelenen öğeleri otomatik bulur) |
+| `convert-font` | Yazı Tipi Dönüştür | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel'den CSV'ye | `convert-spreadsheet` tarafından desteklenen özel dönüştürme ön ayarı |
 | `create-zip` | ZIP Oluştur | - (çok dosyalı, 2-50 dosya) |
 | `extract-zip` | ZIP Ayıkla | - (bomba korumalı) |

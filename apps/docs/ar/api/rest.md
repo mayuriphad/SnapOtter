@@ -1,7 +1,7 @@
 ---
 description: "مرجع REST API الكامل. نقاط نهاية الأدوات، والمعالجة الدفعية، وخطوط المعالجة، ومكتبة الملفات، والمصادقة، والفرق، وعمليات الإدارة."
-i18n_output_hash: 146f4c35be04
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 6eeb037b1faf
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -375,6 +375,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `merge-csvs` | دمج ملفات CSV | - (متعدد الملفات، أعمدة متطابقة) |
 | `yaml-json` | YAML / JSON | - (ثنائي الاتجاه) |
 | `xml-to-csv` | XML إلى CSV | - (يعثر تلقائيًا على العناصر المتكررة) |
+| `convert-font` | تحويل خط | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel إلى CSV | إعداد تحويل جاهز مخصص مدعوم بـ `convert-spreadsheet` |
 | `create-zip` | إنشاء ZIP | - (متعدد الملفات، 2-50 ملفًا) |
 | `extract-zip` | استخراج ZIP | - (محمي من قنابل الضغط) |

@@ -1,7 +1,7 @@
 ---
 description: "Referensi REST API lengkap. Endpoint tool, pemrosesan batch, pipeline, pustaka file, autentikasi, tim, dan operasi admin."
-i18n_output_hash: 9ef22f278d64
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: acad967fc9f4
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -375,6 +375,7 @@ Semua tool AI berjalan di perangkat keras Anda: CPU secara default, atau NVIDIA 
 | `merge-csvs` | Merge CSVs | - (multi-file, kolom yang cocok) |
 | `yaml-json` | YAML / JSON | - (dua arah) |
 | `xml-to-csv` | XML to CSV | - (menemukan elemen berulang secara otomatis) |
+| `convert-font` | Konversi Font | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel to CSV | preset konversi khusus yang didukung oleh `convert-spreadsheet` |
 | `create-zip` | Create ZIP | - (multi-file, 2-50 file) |
 | `extract-zip` | Extract ZIP | - (terlindungi dari bomb) |

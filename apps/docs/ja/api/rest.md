@@ -1,7 +1,7 @@
 ---
 description: "完全な REST API リファレンス。ツールエンドポイント、バッチ処理、パイプライン、ファイルライブラリ、認証、チーム、管理者操作。"
-i18n_output_hash: 8c5d97092eb1
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 19043fd623f5
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -375,6 +375,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `merge-csvs` | CSV の結合 | -（複数ファイル、列が一致するもの） |
 | `yaml-json` | YAML / JSON | -（双方向） |
 | `xml-to-csv` | XML から CSV | -（繰り返し要素を自動検出） |
+| `convert-font` | フォント変換 | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel から CSV | `convert-spreadsheet` を基盤とする専用の変換プリセット |
 | `create-zip` | ZIP の作成 | -（複数ファイル、2-50 ファイル） |
 | `extract-zip` | ZIP の展開 | -（ボム対策済み） |

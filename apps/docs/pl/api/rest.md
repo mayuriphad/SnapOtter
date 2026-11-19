@@ -1,8 +1,8 @@
 ---
 description: "Kompletna dokumentacja API REST. Punkty końcowe narzędzi, przetwarzanie wsadowe, potoki, biblioteka plików, uwierzytelnianie, zespoły i operacje administracyjne."
-i18n_output_hash: 8df34fa0c217
+i18n_output_hash: fadf7bcc934d
 i18n_hash_version: 2
-i18n_source_hash: e1ea853b4dd1
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -376,6 +376,7 @@ Wszystkie narzędzia AI działają na Twoim sprzęcie: domyślnie na CPU lub na 
 | `merge-csvs` | Łączenie plików CSV | - (wieloplikowe, pasujące kolumny) |
 | `yaml-json` | YAML / JSON | - (dwukierunkowe) |
 | `xml-to-csv` | XML do CSV | - (automatyczne wyszukiwanie powtarzających się elementów) |
+| `convert-font` | Konwertuj czcionkę | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel do CSV | dedykowane ustawienie wstępne konwersji oparte na `convert-spreadsheet` |
 | `create-zip` | Utwórz ZIP | - (wieloplikowe, 2-50 plików) |
 | `extract-zip` | Wypakuj ZIP | - (ochrona przed bombą) |

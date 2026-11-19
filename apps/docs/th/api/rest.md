@@ -1,7 +1,7 @@
 ---
 description: "เอกสารอ้างอิง REST API ฉบับสมบูรณ์ เอนด์พอยต์ของเครื่องมือ การประมวลผลแบบแบตช์ ไปป์ไลน์ คลังไฟล์ การยืนยันตัวตน ทีม และการดำเนินงานของผู้ดูแลระบบ"
-i18n_output_hash: 160370d9a3a2
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: 44736350cf23
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -375,6 +375,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `merge-csvs` | รวม CSV | - (หลายไฟล์ คอลัมน์ตรงกัน) |
 | `yaml-json` | YAML / JSON | - (แบบสองทิศทาง) |
 | `xml-to-csv` | XML เป็น CSV | - (ค้นหาองค์ประกอบที่ซ้ำโดยอัตโนมัติ) |
+| `convert-font` | แปลงฟอนต์ | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel เป็น CSV | พรีเซ็ตการแปลงเฉพาะที่รองรับโดย `convert-spreadsheet` |
 | `create-zip` | สร้าง ZIP | - (หลายไฟล์ 2-50 ไฟล์) |
 | `extract-zip` | แตก ZIP | - (ป้องกัน bomb) |

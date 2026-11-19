@@ -1,7 +1,7 @@
 ---
 description: "完整的 REST API 参考。工具端点、批处理、流水线、文件库、身份验证、团队以及管理操作。"
-i18n_output_hash: ba586fc24c44
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: f12cb69f90f7
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -375,6 +375,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `merge-csvs` | 合并 CSV | -（多文件，列匹配） |
 | `yaml-json` | YAML / JSON | -（双向） |
 | `xml-to-csv` | XML 转 CSV | -（自动查找重复元素） |
+| `convert-font` | 转换字体 | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel 转 CSV | 由 `convert-spreadsheet` 支撑的专用转换预设 |
 | `create-zip` | 创建 ZIP | -（多文件，2-50 个文件） |
 | `extract-zip` | 解压 ZIP | -（已做 ZIP 炸弹防护） |

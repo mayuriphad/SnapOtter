@@ -1,8 +1,8 @@
 ---
 description: "Полный справочник REST API. Эндпоинты инструментов, пакетная обработка, конвейеры, файловая библиотека, аутентификация, команды и административные операции."
-i18n_output_hash: 16902975687f
+i18n_output_hash: aab972cf4f5c
 i18n_hash_version: 2
-i18n_source_hash: e1ea853b4dd1
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -376,6 +376,7 @@ curl -X POST http://localhost:1349/api/v1/tools/<section>/<toolId>/batch \
 | `merge-csvs` | Объединение CSV | - (несколько файлов, совпадающие столбцы) |
 | `yaml-json` | YAML / JSON | - (двунаправленный) |
 | `xml-to-csv` | XML в CSV | - (автоматически находит повторяющиеся элементы) |
+| `convert-font` | Конвертация шрифтов | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel в CSV | специальный пресет конвертации на основе `convert-spreadsheet` |
 | `create-zip` | Создание ZIP | - (несколько файлов, 2-50 файлов) |
 | `extract-zip` | Извлечение ZIP | - (защита от zip-бомб) |

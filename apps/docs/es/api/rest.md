@@ -1,7 +1,7 @@
 ---
 description: "Referencia completa de la API REST. Endpoints de herramientas, procesamiento por lotes, pipelines, biblioteca de archivos, autenticación, equipos y operaciones de administración."
-i18n_output_hash: ba33fa699e8f
-i18n_source_hash: e1ea853b4dd1
+i18n_output_hash: d96d1b1fc24f
+i18n_source_hash: 4e4c4af58ef7
 i18n_provenance: human
 ---
 
@@ -375,6 +375,7 @@ Todas las herramientas de IA se ejecutan en tu hardware: CPU por defecto, o NVID
 | `merge-csvs` | Combinar CSV | - (multiarchivo, columnas coincidentes) |
 | `yaml-json` | YAML / JSON | - (bidireccional) |
 | `xml-to-csv` | XML a CSV | - (encuentra automáticamente los elementos repetidos) |
+| `convert-font` | Convertir fuente | `format` (ttf, otf, woff, woff2) |
 | `excel-to-csv` | Excel a CSV | preajuste de conversión dedicado respaldado por `convert-spreadsheet` |
 | `create-zip` | Crear ZIP | - (multiarchivo, 2-50 archivos) |
 | `extract-zip` | Extraer ZIP | - (protegido contra bombas) |
