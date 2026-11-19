@@ -44,7 +44,13 @@ const OWN_413 = [
 const NO_413: Record<string, string> = {};
 
 // Catalog tools that make something from settings alone, so take no upload.
-const NO_UPLOAD_TOOLS = ["barcode-generate", "html-to-image", "passport-photo", "qr-generate"];
+const NO_UPLOAD_TOOLS = [
+  "aspect-ratio-calculator",
+  "barcode-generate",
+  "html-to-image",
+  "passport-photo",
+  "qr-generate",
+];
 
 interface Operation {
   requestBody?: { content?: Record<string, unknown> };
