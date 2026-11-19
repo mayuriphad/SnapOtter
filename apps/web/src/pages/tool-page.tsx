@@ -1527,6 +1527,7 @@ function ToolPageContent({
                 cssRotate: previewTransform.rotate,
                 cssFlipH: previewTransform.flipH,
                 cssFlipV: previewTransform.flipV,
+                gridOverlay: previewTransform.showGrid,
               }
             : {})}
           {...(isLivePreview && previewFilter ? { cssFilter: previewFilter } : {})}
