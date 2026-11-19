@@ -737,8 +737,17 @@ export async function processToolJob(job: Job<ToolJobData>): Promise<ToolJobResu
         (isSafeMessageError(err) ||
           (err instanceof Error && err.name === "InputValidationError")) &&
         (err as { code?: unknown }).code === "ENGINE_UNAVAILABLE";
+      // A page that timed out loading once will time out again (#4337).
+      const isPageLoadTimeout =
+        err instanceof Error &&
+        err.name === "InputValidationError" &&
+        (err as { code?: unknown }).code === "PAGE_LOAD_TIMEOUT";
       const isUnrecoverable =
-        isCanceled || isValidationError || isInputMissing || isEngineUnavailable;
+        isCanceled ||
+        isValidationError ||
+        isInputMissing ||
+        isEngineUnavailable ||
+        isPageLoadTimeout;
       const maxAttempts = job.opts.attempts ?? 1;
       const willRetry = !isUnrecoverable && job.attemptsMade + 1 < maxAttempts;
 
