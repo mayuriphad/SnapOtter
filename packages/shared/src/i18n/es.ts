@@ -1218,6 +1218,10 @@ export const es: TranslationKeys = {
       name: "XML a CSV",
       description: "Extrae elementos repetitivos de XML a una tabla CSV",
     },
+    base64: {
+      name: "Codificar / decodificar Base64",
+      description: "Codifica texto en Base64 o decodifica Base64 de vuelta a texto",
+    },
     "create-zip": {
       name: "Crear ZIP",
       description: "Agrupa varios archivos en un solo archivo ZIP",
@@ -4042,6 +4046,17 @@ export const es: TranslationKeys = {
       submitBatch: "Convertir ({count} archivos)",
       progressLabel: "Convirtiendo",
     },
+    base64: {
+      encode: "Codificar",
+      decode: "Decodificar",
+      encodeInput: "Texto para codificar",
+      decodeInput: "Base64 para decodificar",
+      encodePlaceholder: "Pega o escribe texto",
+      decodePlaceholder: "Pega Base64 (se ignoran los espacios y saltos de línea)",
+      urlSafe: "Seguro para URL (- y _, sin relleno)",
+      converting: "Convirtiendo",
+      result: "Resultado",
+    },
     "create-zip": {
       submit: "Crear ZIP",
       submitBatch: "Crear ZIP ({count} archivos)",
@@ -5672,7 +5687,11 @@ export const es: TranslationKeys = {
       BROWSER_CRASHED: "El navegador se bloqueó durante el renderizado. Inténtalo de nuevo.",
       BROWSER_NOT_AVAILABLE:
         "El navegador que necesita esta herramienta no está disponible en este momento.",
+      DECODED_DATA_NOT_TEXT:
+        "Este Base64 contiene datos binarios, no texto, así que no se puede mostrar aquí.",
       DEPENDENCY_VALIDATION_FAILED: "Este ajuste depende de otro ajuste que no es válido.",
+      ENCODED_TEXT_INVALID:
+        "Eso no es Base64 válido. Revisa si hay caracteres sueltos o si el final está cortado.",
       FEATURE_CPU_UNSUPPORTED:
         "Esta función necesita un procesador compatible con AVX, y el procesador de este servidor no lo es.",
       FEATURE_INCOMPATIBLE: "Esta función no se puede ejecutar con los ajustes actuales.",

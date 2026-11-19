@@ -13,6 +13,7 @@ import { registerAutoSubtitles } from "./auto-subtitles.js";
 import { registerBackgroundReplace } from "./background-replace.js";
 import { registerBarcodeGenerate } from "./barcode-generate.js";
 import { registerBarcodeRead } from "./barcode-read.js";
+import { registerBase64 } from "./base64.js";
 import { registerBeautify } from "./beautify.js";
 import { registerBlurBackground } from "./blur-background.js";
 import { registerBlurFaces } from "./blur-faces.js";
@@ -387,6 +388,7 @@ export async function registerToolRoutes(app: FastifyInstance): Promise<void> {
     { id: "split-csv", register: registerSplitCsv },
     { id: "xml-to-csv", register: registerXmlToCsv },
     { id: "yaml-json", register: registerYamlJson },
+    { id: "base64", register: registerBase64 },
 
     // AI Tools
     { id: "background-replace", register: registerBackgroundReplace },

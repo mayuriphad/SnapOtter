@@ -853,6 +853,11 @@ const XmlToCsvSettings = lazy(() =>
     default: m.XmlToCsvSettings,
   })),
 );
+const Base64Settings = lazy(() =>
+  import("@/components/tools/base64-settings").then((m) => ({
+    default: m.Base64Settings,
+  })),
+);
 const CreateZipSettings = lazy(() =>
   import("@/components/tools/create-zip-settings").then((m) => ({
     default: m.CreateZipSettings,
@@ -1200,6 +1205,7 @@ const ENTRY_CONFIG: ReadonlyArray<[string, RegistryEntryConfig]> = [
   ["merge-csvs", { accept: ".csv,.tsv", Settings: MergeCsvsSettings }],
   ["yaml-json", { accept: ".yaml,.yml,.json", Settings: YamlJsonSettings }],
   ["xml-to-csv", { accept: ".xml", Settings: XmlToCsvSettings }],
+  ["base64", { Settings: Base64Settings }],
   ["create-zip", { Settings: CreateZipSettings }],
   ["extract-zip", { accept: ".zip", Settings: ExtractZipSettings }],
 ];

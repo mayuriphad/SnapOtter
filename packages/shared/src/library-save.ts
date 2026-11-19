@@ -18,6 +18,7 @@ export const LIBRARY_SAVE_MODE_UNSUPPORTED_TOOLS: ReadonlySet<string> = new Set(
   // Custom routes without fileId/saveMode handling
   "barcode-generate",
   "barcode-read",
+  "base64",
   "beautify",
   "bulk-rename",
   "collage",

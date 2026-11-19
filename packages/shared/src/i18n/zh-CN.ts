@@ -1004,6 +1004,10 @@ export const zhCN: TranslationKeys = {
       name: "XML 转 CSV",
       description: "将 XML 中的重复元素提取为 CSV 表格",
     },
+    base64: {
+      name: "Base64 编码 / 解码",
+      description: "将文本编码为 Base64，或将 Base64 解码回文本",
+    },
     "create-zip": {
       name: "创建 ZIP",
       description: "将多个文件打包为一个 ZIP 压缩包",
@@ -3771,6 +3775,17 @@ export const zhCN: TranslationKeys = {
       submitBatch: "转换（{count} 个文件）",
       progressLabel: "正在转换",
     },
+    base64: {
+      encode: "编码",
+      decode: "解码",
+      encodeInput: "要编码的文本",
+      decodeInput: "要解码的 Base64",
+      encodePlaceholder: "粘贴或输入文本",
+      decodePlaceholder: "粘贴 Base64（空格和换行会被忽略）",
+      urlSafe: "URL 安全（- 和 _，无填充）",
+      converting: "正在转换",
+      result: "结果",
+    },
     "create-zip": {
       submit: "创建 ZIP",
       submitBatch: "创建 ZIP（{count} 个文件）",
@@ -5339,7 +5354,9 @@ export const zhCN: TranslationKeys = {
       BACKGROUND_REMOVAL_EXPIRED: "此背景移除结果已过期。请重新开始。",
       BROWSER_CRASHED: "渲染时浏览器崩溃。请重试。",
       BROWSER_NOT_AVAILABLE: "此工具所需的浏览器目前不可用。",
+      DECODED_DATA_NOT_TEXT: "此 Base64 解码后是二进制数据而不是文本，无法在此显示。",
       DEPENDENCY_VALIDATION_FAILED: "此设置依赖的另一项设置无效。",
+      ENCODED_TEXT_INVALID: "这不是有效的 Base64。请检查是否有多余字符或结尾被截断。",
       FEATURE_CPU_UNSUPPORTED: "此功能需要支持 AVX 的 CPU，但此服务器的 CPU 不支持。",
       FEATURE_INCOMPATIBLE: "此功能无法在当前设置下运行。",
       FST_REQ_FILE_TOO_LARGE: "此文件过大，无法上传。",

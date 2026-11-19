@@ -1177,6 +1177,10 @@ export const ko: TranslationKeys = {
       name: "XML을 CSV로",
       description: "XML에서 반복 요소를 CSV 테이블로 추출",
     },
+    base64: {
+      name: "Base64 인코딩 / 디코딩",
+      description: "텍스트를 Base64로 인코딩하거나 Base64를 다시 텍스트로 디코딩",
+    },
     "create-zip": {
       name: "ZIP 만들기",
       description: "여러 파일을 하나의 ZIP 아카이브로 묶기",
@@ -3974,6 +3978,17 @@ export const ko: TranslationKeys = {
       submitBatch: "변환 ({count}개 파일)",
       progressLabel: "변환 중",
     },
+    base64: {
+      encode: "인코딩",
+      decode: "디코딩",
+      encodeInput: "인코딩할 텍스트",
+      decodeInput: "디코딩할 Base64",
+      encodePlaceholder: "텍스트를 붙여넣거나 입력하세요",
+      decodePlaceholder: "Base64를 붙여넣으세요 (공백과 줄바꿈은 무시됩니다)",
+      urlSafe: "URL 안전 (- 및 _, 패딩 없음)",
+      converting: "변환 중",
+      result: "결과",
+    },
     "create-zip": {
       submit: "ZIP 생성",
       submitBatch: "ZIP 생성 ({count}개 파일)",
@@ -5567,7 +5582,11 @@ export const ko: TranslationKeys = {
       BACKGROUND_REMOVAL_EXPIRED: "이 배경 제거 작업이 만료되었습니다. 처음부터 다시 시작하세요.",
       BROWSER_CRASHED: "렌더링 중 브라우저가 종료되었습니다. 다시 시도하세요.",
       BROWSER_NOT_AVAILABLE: "이 도구에 필요한 브라우저를 지금은 사용할 수 없습니다.",
+      DECODED_DATA_NOT_TEXT:
+        "이 Base64는 텍스트가 아닌 바이너리 데이터라서 여기에 표시할 수 없습니다.",
       DEPENDENCY_VALIDATION_FAILED: "이 설정이 의존하는 다른 설정이 올바르지 않습니다.",
+      ENCODED_TEXT_INVALID:
+        "올바른 Base64가 아닙니다. 불필요한 문자나 잘린 끝부분이 없는지 확인하세요.",
       FEATURE_CPU_UNSUPPORTED:
         "이 기능에는 AVX를 지원하는 CPU가 필요하지만 이 서버의 CPU는 AVX를 지원하지 않습니다.",
       FEATURE_INCOMPATIBLE: "현재 설정에서는 이 기능을 실행할 수 없습니다.",

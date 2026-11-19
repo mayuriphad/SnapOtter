@@ -1235,6 +1235,10 @@ export const nl: TranslationKeys = {
       name: "XML naar CSV",
       description: "Extraheer herhalende elementen uit XML naar een CSV-tabel",
     },
+    base64: {
+      name: "Base64 coderen / decoderen",
+      description: "Codeer tekst naar Base64 of decodeer Base64 terug naar tekst",
+    },
     "create-zip": {
       name: "ZIP maken",
       description: "Bundel meerdere bestanden in een enkel ZIP-archief",
@@ -4063,6 +4067,17 @@ export const nl: TranslationKeys = {
       submitBatch: "Converteren ({count} bestanden)",
       progressLabel: "Converteren",
     },
+    base64: {
+      encode: "Coderen",
+      decode: "Decoderen",
+      encodeInput: "Te coderen tekst",
+      decodeInput: "Te decoderen Base64",
+      encodePlaceholder: "Plak of typ tekst",
+      decodePlaceholder: "Plak Base64 (spaties en regeleinden worden genegeerd)",
+      urlSafe: "URL-veilig (- en _, zonder opvulling)",
+      converting: "Bezig met converteren",
+      result: "Resultaat",
+    },
     "create-zip": {
       submit: "ZIP maken",
       submitBatch: "ZIP maken ({count} bestanden)",
@@ -5682,8 +5697,12 @@ export const nl: TranslationKeys = {
       BACKGROUND_REMOVAL_EXPIRED: "Deze achtergrondverwijdering is verlopen. Begin opnieuw.",
       BROWSER_CRASHED: "De browser is gecrasht tijdens het renderen. Probeer het opnieuw.",
       BROWSER_NOT_AVAILABLE: "De browser die dit hulpprogramma nodig heeft is nu niet beschikbaar.",
+      DECODED_DATA_NOT_TEXT:
+        "Deze Base64 bevat binaire gegevens, geen tekst, dus die kan hier niet worden getoond.",
       DEPENDENCY_VALIDATION_FAILED:
         "Deze instelling hangt af van een andere instelling die niet geldig is.",
+      ENCODED_TEXT_INVALID:
+        "Dat is geen geldige Base64. Controleer op losse tekens of een afgekapt einde.",
       FEATURE_CPU_UNSUPPORTED:
         "Deze functie heeft een processor met AVX-ondersteuning nodig, en de processor van deze server heeft dat niet.",
       FEATURE_INCOMPATIBLE: "Deze functie kan niet draaien met de huidige instellingen.",

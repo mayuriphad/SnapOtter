@@ -1235,6 +1235,10 @@ export const de: TranslationKeys = {
       name: "XML zu CSV",
       description: "Wiederkehrende Elemente aus XML in eine CSV-Tabelle extrahieren",
     },
+    base64: {
+      name: "Base64 kodieren / dekodieren",
+      description: "Text in Base64 kodieren oder Base64 zurück in Text dekodieren",
+    },
     "create-zip": {
       name: "ZIP erstellen",
       description: "Mehrere Dateien in ein einzelnes ZIP-Archiv bündeln",
@@ -4073,6 +4077,17 @@ export const de: TranslationKeys = {
       submitBatch: "Konvertieren ({count} Dateien)",
       progressLabel: "Wird konvertiert",
     },
+    base64: {
+      encode: "Kodieren",
+      decode: "Dekodieren",
+      encodeInput: "Zu kodierender Text",
+      decodeInput: "Zu dekodierendes Base64",
+      encodePlaceholder: "Text einfügen oder eingeben",
+      decodePlaceholder: "Base64 einfügen (Leerzeichen und Zeilenumbrüche werden ignoriert)",
+      urlSafe: "URL-sicher (- und _, ohne Auffüllung)",
+      converting: "Wird konvertiert",
+      result: "Ergebnis",
+    },
     "create-zip": {
       submit: "ZIP erstellen",
       submitBatch: "ZIP erstellen ({count} Dateien)",
@@ -5711,8 +5726,12 @@ export const de: TranslationKeys = {
       BROWSER_CRASHED: "Der Browser ist beim Rendern abgestürzt. Versuchen Sie es erneut.",
       BROWSER_NOT_AVAILABLE:
         "Der Browser, den dieses Werkzeug benötigt, ist derzeit nicht verfügbar.",
+      DECODED_DATA_NOT_TEXT:
+        "Dieses Base64 ergibt Binärdaten statt Text und kann hier nicht angezeigt werden.",
       DEPENDENCY_VALIDATION_FAILED:
         "Diese Einstellung hängt von einer anderen Einstellung ab, die nicht gültig ist.",
+      ENCODED_TEXT_INVALID:
+        "Das ist kein gültiges Base64. Prüfe auf fremde Zeichen oder ein abgeschnittenes Ende.",
       FEATURE_CPU_UNSUPPORTED:
         "Diese Funktion braucht einen Prozessor mit AVX-Unterstützung, und der Prozessor dieses Servers hat sie nicht.",
       FEATURE_INCOMPATIBLE:

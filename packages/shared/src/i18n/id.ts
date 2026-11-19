@@ -1230,6 +1230,10 @@ export const id: TranslationKeys = {
       name: "XML ke CSV",
       description: "Ekstrak elemen berulang dari XML ke tabel CSV",
     },
+    base64: {
+      name: "Encode / Decode Base64",
+      description: "Encode teks ke Base64 atau decode Base64 kembali ke teks",
+    },
     "create-zip": {
       name: "Buat ZIP",
       description: "Gabungkan beberapa file menjadi satu arsip ZIP",
@@ -4047,6 +4051,17 @@ export const id: TranslationKeys = {
       submitBatch: "Konversi ({count} file)",
       progressLabel: "Mengonversi",
     },
+    base64: {
+      encode: "Encode",
+      decode: "Decode",
+      encodeInput: "Teks untuk di-encode",
+      decodeInput: "Base64 untuk di-decode",
+      encodePlaceholder: "Tempel atau ketik teks",
+      decodePlaceholder: "Tempel Base64 (spasi dan baris baru diabaikan)",
+      urlSafe: "Aman untuk URL (- dan _, tanpa padding)",
+      converting: "Mengonversi",
+      result: "Hasil",
+    },
     "create-zip": {
       submit: "Buat ZIP",
       submitBatch: "Buat ZIP ({count} file)",
@@ -5659,8 +5674,12 @@ export const id: TranslationKeys = {
       BACKGROUND_REMOVAL_EXPIRED: "Penghapusan latar belakang ini telah kedaluwarsa. Mulai lagi.",
       BROWSER_CRASHED: "Peramban mengalami crash saat merender. Coba lagi.",
       BROWSER_NOT_AVAILABLE: "Peramban yang dibutuhkan alat ini sedang tidak tersedia.",
+      DECODED_DATA_NOT_TEXT:
+        "Base64 ini berisi data biner, bukan teks, jadi tidak bisa ditampilkan di sini.",
       DEPENDENCY_VALIDATION_FAILED:
         "Pengaturan ini bergantung pada pengaturan lain yang tidak valid.",
+      ENCODED_TEXT_INVALID:
+        "Itu bukan Base64 yang valid. Periksa karakter yang nyasar atau bagian akhir yang terpotong.",
       FEATURE_CPU_UNSUPPORTED:
         "Fitur ini memerlukan CPU yang mendukung AVX, dan CPU server ini tidak mendukungnya.",
       FEATURE_INCOMPATIBLE: "Fitur ini tidak dapat berjalan dengan pengaturan saat ini.",

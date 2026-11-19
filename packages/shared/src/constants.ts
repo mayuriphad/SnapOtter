@@ -37,6 +37,14 @@ export const MAX_RESIZE_PERCENTAGE = 1000;
  */
 export const MAX_CONTENT_AWARE_RESIZE_PIXELS = 25_000_000;
 
+/**
+ * Most characters the base64 text tool takes in one request. It covers anything
+ * pasted to copy back out (a long config, a PEM bundle) while keeping the
+ * answer small enough for a textarea. The route enforces it; the panel caps its
+ * input at the same length.
+ */
+export const BASE64_TEXT_MAX_CHARS = 1_000_000;
+
 export const CATEGORIES: CategoryInfo[] = [
   // Image
   { id: "essentials", name: "Essentials", icon: "Layers", color: "#3B82F6" },

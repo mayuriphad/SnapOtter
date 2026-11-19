@@ -1219,6 +1219,10 @@ export const ar: TranslationKeys = {
       name: "XML إلى CSV",
       description: "استخراج العناصر المتكررة من XML إلى جدول CSV",
     },
+    base64: {
+      name: "ترميز / فك ترميز Base64",
+      description: "رمّز النص إلى Base64 أو فك ترميز Base64 إلى نص",
+    },
     "create-zip": {
       name: "إنشاء ZIP",
       description: "تجميع ملفات متعددة في أرشيف ZIP واحد",
@@ -4018,6 +4022,17 @@ export const ar: TranslationKeys = {
       submitBatch: "تحويل ({count} ملفات)",
       progressLabel: "جارٍ التحويل",
     },
+    base64: {
+      encode: "ترميز",
+      decode: "فك الترميز",
+      encodeInput: "النص المراد ترميزه",
+      decodeInput: "Base64 المراد فك ترميزه",
+      encodePlaceholder: "الصق النص أو اكتبه",
+      decodePlaceholder: "الصق Base64 (يتم تجاهل المسافات وفواصل الأسطر)",
+      urlSafe: "آمن لعناوين URL (- و _، بدون حشو)",
+      converting: "جارٍ التحويل",
+      result: "النتيجة",
+    },
     "create-zip": {
       submit: "إنشاء ZIP",
       submitBatch: "إنشاء ZIP ({count} ملفات)",
@@ -5606,7 +5621,9 @@ export const ar: TranslationKeys = {
       BACKGROUND_REMOVAL_EXPIRED: "انتهت صلاحية إزالة الخلفية هذه. ابدأ من جديد.",
       BROWSER_CRASHED: "تعطّل المتصفح أثناء العرض. حاول مرة أخرى.",
       BROWSER_NOT_AVAILABLE: "المتصفح الذي تحتاجه هذه الأداة غير متاح حاليًا.",
+      DECODED_DATA_NOT_TEXT: "يحتوي Base64 هذا على بيانات ثنائية وليس نصًا، لذا لا يمكن عرضه هنا.",
       DEPENDENCY_VALIDATION_FAILED: "يعتمد هذا الإعداد على إعداد آخر غير صالح.",
+      ENCODED_TEXT_INVALID: "هذا ليس Base64 صالحًا. تحقق من وجود أحرف زائدة أو نهاية مقطوعة.",
       FEATURE_CPU_UNSUPPORTED:
         "تحتاج هذه الميزة إلى معالج يدعم تعليمات AVX، ومعالج هذا الخادم لا يدعمها.",
       FEATURE_INCOMPATIBLE: "لا يمكن تشغيل هذه الميزة مع الإعدادات الحالية.",
