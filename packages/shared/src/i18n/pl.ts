@@ -957,6 +957,11 @@ export const pl: TranslationKeys = {
       name: "Wyodrębnij napisy",
       description: "Wyodrębnij ścieżkę napisów z wideo jako plik SRT",
     },
+    "convert-subtitles": {
+      name: "Konwertuj napisy",
+      description:
+        "Konwertuj pliki napisów między SRT, WebVTT i ASS. Pozycjonowanie i efekty ASS zostaną utracone",
+    },
     "images-to-video": {
       name: "Obrazy na wideo",
       description: "Zamień zestaw obrazów w wideo z pokazem slajdów",
@@ -3547,6 +3552,18 @@ export const pl: TranslationKeys = {
       submit: "Wyodrębnij napisy",
       submitBatch: "Wyodrębnij napisy ({count} plików)",
       progressLabel: "Wyodrębnianie napisów",
+    },
+    "convert-subtitles": {
+      format: "Format wyjściowy",
+      encoding: "Kodowanie tekstu",
+      autoDetect: "Automatyczne wykrywanie",
+      encodingHint:
+        "Wybierz kodowanie pliku, jeśli znaki diakrytyczne lub niełacińskie wyświetlają się niepoprawnie",
+      stylingHint:
+        "Konwersja z ASS zachowuje podstawowe formatowanie, np. kursywę, ale usuwa pozycjonowanie i efekty",
+      submit: "Konwertuj napisy",
+      submitBatch: "Konwertuj napisy ({count} plików)",
+      progressLabel: "Konwertowanie napisów",
     },
     "images-to-video": {
       square1080x1080: "Kwadrat (1080x1080)",
