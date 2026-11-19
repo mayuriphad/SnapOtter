@@ -38,6 +38,7 @@ export const LIBRARY_SAVE_MODE_UNSUPPORTED_TOOLS: ReadonlySet<string> = new Set(
   "optimize-for-web",
   "passport-photo",
   "pdf-to-image",
+  "proportion-calculator",
   "qr-generate",
   "split",
   "stitch",

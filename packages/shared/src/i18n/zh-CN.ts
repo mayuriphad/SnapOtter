@@ -1004,6 +1004,10 @@ export const zhCN: TranslationKeys = {
       name: "XML 转 CSV",
       description: "将 XML 中的重复元素提取为 CSV 表格",
     },
+    "proportion-calculator": {
+      name: "比例计算器",
+      description: "解比例（三率法）：由三个已知值求 X",
+    },
     "create-zip": {
       name: "创建 ZIP",
       description: "将多个文件打包为一个 ZIP 压缩包",
@@ -3770,6 +3774,18 @@ export const zhCN: TranslationKeys = {
       submit: "转换",
       submitBatch: "转换（{count} 个文件）",
       progressLabel: "正在转换",
+    },
+    "proportion-calculator": {
+      modeLabel: "类型",
+      direct: "正比例",
+      inverse: "反比例",
+      directHint: "A 比 B 等于 C 比 X，所以 X = B × C ÷ A",
+      inverseHint: "A × B = C × X，所以 X = A × B ÷ C",
+      calculate: "计算",
+      result: "结果",
+      invalidNumber: "请输入数字",
+      zeroDivisorDirect: "正比例中 A 不能为 0",
+      zeroDivisorInverse: "反比例中 C 不能为 0",
     },
     "create-zip": {
       submit: "创建 ZIP",

@@ -1235,6 +1235,10 @@ export const nl: TranslationKeys = {
       name: "XML naar CSV",
       description: "Extraheer herhalende elementen uit XML naar een CSV-tabel",
     },
+    "proportion-calculator": {
+      name: "Verhoudingscalculator",
+      description: "Los de regel van drie op: vind X uit drie bekende waarden",
+    },
     "create-zip": {
       name: "ZIP maken",
       description: "Bundel meerdere bestanden in een enkel ZIP-archief",
@@ -4062,6 +4066,18 @@ export const nl: TranslationKeys = {
       submit: "Converteren",
       submitBatch: "Converteren ({count} bestanden)",
       progressLabel: "Converteren",
+    },
+    "proportion-calculator": {
+      modeLabel: "Soort",
+      direct: "Recht evenredig",
+      inverse: "Omgekeerd evenredig",
+      directHint: "A staat tot B als C tot X, dus X = B × C ÷ A",
+      inverseHint: "A × B = C × X, dus X = A × B ÷ C",
+      calculate: "Berekenen",
+      result: "Resultaat",
+      invalidNumber: "Voer een getal in",
+      zeroDivisorDirect: "A mag bij een recht evenredige verhouding niet 0 zijn",
+      zeroDivisorInverse: "C mag bij een omgekeerd evenredige verhouding niet 0 zijn",
     },
     "create-zip": {
       submit: "ZIP maken",

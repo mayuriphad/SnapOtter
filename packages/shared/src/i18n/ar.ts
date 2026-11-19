@@ -1219,6 +1219,10 @@ export const ar: TranslationKeys = {
       name: "XML إلى CSV",
       description: "استخراج العناصر المتكررة من XML إلى جدول CSV",
     },
+    "proportion-calculator": {
+      name: "حاسبة التناسب",
+      description: "حلّ قاعدة الثلاثة: أوجد X من ثلاث قيم معروفة",
+    },
     "create-zip": {
       name: "إنشاء ZIP",
       description: "تجميع ملفات متعددة في أرشيف ZIP واحد",
@@ -4017,6 +4021,18 @@ export const ar: TranslationKeys = {
       submit: "تحويل",
       submitBatch: "تحويل ({count} ملفات)",
       progressLabel: "جارٍ التحويل",
+    },
+    "proportion-calculator": {
+      modeLabel: "النوع",
+      direct: "طردي",
+      inverse: "عكسي",
+      directHint: "نسبة A إلى B كنسبة C إلى X، إذن X = B × C ÷ A",
+      inverseHint: "A × B = C × X، إذن X = A × B ÷ C",
+      calculate: "احسب",
+      result: "النتيجة",
+      invalidNumber: "أدخل رقمًا",
+      zeroDivisorDirect: "لا يمكن أن تكون A صفرًا في التناسب الطردي",
+      zeroDivisorInverse: "لا يمكن أن تكون C صفرًا في التناسب العكسي",
     },
     "create-zip": {
       submit: "إنشاء ZIP",

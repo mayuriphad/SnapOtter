@@ -1232,6 +1232,10 @@ export const uk: TranslationKeys = {
       name: "XML у CSV",
       description: "Витягти повторювані елементи з XML у таблицю CSV",
     },
+    "proportion-calculator": {
+      name: "Калькулятор пропорцій",
+      description: "Розв'яжіть пропорцію: знайдіть X за трьома відомими значеннями",
+    },
     "create-zip": {
       name: "Створення ZIP",
       description: "Запакувати кілька файлів в один архів ZIP",
@@ -4053,6 +4057,18 @@ export const uk: TranslationKeys = {
       submit: "Конвертувати",
       submitBatch: "Конвертувати ({count} файлів)",
       progressLabel: "Конвертація",
+    },
+    "proportion-calculator": {
+      modeLabel: "Тип",
+      direct: "Пряма",
+      inverse: "Обернена",
+      directHint: "A відноситься до B, як C до X, тому X = B × C ÷ A",
+      inverseHint: "A × B = C × X, тому X = A × B ÷ C",
+      calculate: "Обчислити",
+      result: "Результат",
+      invalidNumber: "Введіть число",
+      zeroDivisorDirect: "У прямій пропорції A не може дорівнювати 0",
+      zeroDivisorInverse: "В оберненій пропорції C не може дорівнювати 0",
     },
     "create-zip": {
       submit: "Створити ZIP",

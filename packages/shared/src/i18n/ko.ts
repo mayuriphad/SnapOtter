@@ -1177,6 +1177,10 @@ export const ko: TranslationKeys = {
       name: "XML을 CSV로",
       description: "XML에서 반복 요소를 CSV 테이블로 추출",
     },
+    "proportion-calculator": {
+      name: "비례식 계산기",
+      description: "비례식 풀기: 알려진 세 값으로 X를 구합니다",
+    },
     "create-zip": {
       name: "ZIP 만들기",
       description: "여러 파일을 하나의 ZIP 아카이브로 묶기",
@@ -3973,6 +3977,18 @@ export const ko: TranslationKeys = {
       submit: "변환",
       submitBatch: "변환 ({count}개 파일)",
       progressLabel: "변환 중",
+    },
+    "proportion-calculator": {
+      modeLabel: "종류",
+      direct: "정비례",
+      inverse: "반비례",
+      directHint: "A : B = C : X 이므로 X = B × C ÷ A",
+      inverseHint: "A × B = C × X 이므로 X = A × B ÷ C",
+      calculate: "계산",
+      result: "결과",
+      invalidNumber: "숫자를 입력하세요",
+      zeroDivisorDirect: "정비례에서는 A가 0일 수 없습니다",
+      zeroDivisorInverse: "반비례에서는 C가 0일 수 없습니다",
     },
     "create-zip": {
       submit: "ZIP 생성",

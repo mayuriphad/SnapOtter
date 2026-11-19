@@ -1185,6 +1185,10 @@ export const en = {
       name: "XML to CSV",
       description: "Extract repeating elements from XML into a CSV table",
     },
+    "proportion-calculator": {
+      name: "Proportion Calculator",
+      description: "Solve the rule of three: find X from three known values",
+    },
     "create-zip": {
       name: "Create ZIP",
       description: "Bundle multiple files into a single ZIP archive",
@@ -3982,6 +3986,18 @@ export const en = {
       submit: "Convert",
       submitBatch: "Convert ({count} files)",
       progressLabel: "Converting",
+    },
+    "proportion-calculator": {
+      modeLabel: "Type",
+      direct: "Direct",
+      inverse: "Inverse",
+      directHint: "A is to B as C is to X, so X = B × C ÷ A",
+      inverseHint: "A × B = C × X, so X = A × B ÷ C",
+      calculate: "Calculate",
+      result: "Result",
+      invalidNumber: "Enter a number",
+      zeroDivisorDirect: "A can't be 0 in a direct proportion",
+      zeroDivisorInverse: "C can't be 0 in an inverse proportion",
     },
     "create-zip": {
       submit: "Create ZIP",

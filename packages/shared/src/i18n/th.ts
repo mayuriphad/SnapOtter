@@ -1213,6 +1213,10 @@ export const th: TranslationKeys = {
       name: "XML เป็น CSV",
       description: "แยกองค์ประกอบที่ซ้ำจาก XML เป็นตาราง CSV",
     },
+    "proportion-calculator": {
+      name: "เครื่องคิดเลขสัดส่วน",
+      description: "แก้โจทย์บัญญัติไตรยางศ์: หา X จากค่าที่รู้สามค่า",
+    },
     "create-zip": {
       name: "สร้าง ZIP",
       description: "รวมหลายไฟล์เป็นไฟล์ ZIP เดียว",
@@ -3989,6 +3993,18 @@ export const th: TranslationKeys = {
       submit: "แปลง",
       submitBatch: "แปลง ({count} ไฟล์)",
       progressLabel: "กำลังแปลง",
+    },
+    "proportion-calculator": {
+      modeLabel: "ประเภท",
+      direct: "แปรผันตรง",
+      inverse: "แปรผกผัน",
+      directHint: "A ต่อ B เท่ากับ C ต่อ X ดังนั้น X = B × C ÷ A",
+      inverseHint: "A × B = C × X ดังนั้น X = A × B ÷ C",
+      calculate: "คำนวณ",
+      result: "ผลลัพธ์",
+      invalidNumber: "ป้อนตัวเลข",
+      zeroDivisorDirect: "A เป็น 0 ไม่ได้ในการแปรผันตรง",
+      zeroDivisorInverse: "C เป็น 0 ไม่ได้ในการแปรผกผัน",
     },
     "create-zip": {
       submit: "สร้าง ZIP",

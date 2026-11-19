@@ -1230,6 +1230,10 @@ export const id: TranslationKeys = {
       name: "XML ke CSV",
       description: "Ekstrak elemen berulang dari XML ke tabel CSV",
     },
+    "proportion-calculator": {
+      name: "Kalkulator Perbandingan",
+      description: "Selesaikan aturan tiga: cari X dari tiga nilai yang diketahui",
+    },
     "create-zip": {
       name: "Buat ZIP",
       description: "Gabungkan beberapa file menjadi satu arsip ZIP",
@@ -4046,6 +4050,18 @@ export const id: TranslationKeys = {
       submit: "Konversi",
       submitBatch: "Konversi ({count} file)",
       progressLabel: "Mengonversi",
+    },
+    "proportion-calculator": {
+      modeLabel: "Jenis",
+      direct: "Senilai",
+      inverse: "Berbalik nilai",
+      directHint: "A banding B sama dengan C banding X, jadi X = B × C ÷ A",
+      inverseHint: "A × B = C × X, jadi X = A × B ÷ C",
+      calculate: "Hitung",
+      result: "Hasil",
+      invalidNumber: "Masukkan angka",
+      zeroDivisorDirect: "A tidak boleh 0 pada perbandingan senilai",
+      zeroDivisorInverse: "C tidak boleh 0 pada perbandingan berbalik nilai",
     },
     "create-zip": {
       submit: "Buat ZIP",

@@ -107,6 +107,7 @@ import { registerPitchShift } from "./pitch-shift.js";
 import { registerPixelate } from "./pixelate.js";
 import { registerPopularTools } from "./popular.js";
 import { registerPowerpointToPdf } from "./powerpoint-to-pdf.js";
+import { registerProportionCalculator } from "./proportion-calculator.js";
 import { registerProtectPdf } from "./protect-pdf.js";
 import { registerQrGenerate } from "./qr-generate.js";
 import { registerRedEyeRemoval } from "./red-eye-removal.js";
@@ -387,6 +388,7 @@ export async function registerToolRoutes(app: FastifyInstance): Promise<void> {
     { id: "split-csv", register: registerSplitCsv },
     { id: "xml-to-csv", register: registerXmlToCsv },
     { id: "yaml-json", register: registerYamlJson },
+    { id: "proportion-calculator", register: registerProportionCalculator },
 
     // AI Tools
     { id: "background-replace", register: registerBackgroundReplace },

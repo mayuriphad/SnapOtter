@@ -1193,6 +1193,10 @@ export const ja: TranslationKeys = {
       name: "XML を CSV に変換",
       description: "XML から繰り返し要素を CSV テーブルに抽出",
     },
+    "proportion-calculator": {
+      name: "比例計算機",
+      description: "比例の計算: 既知の3つの値からXを求めます",
+    },
     "create-zip": {
       name: "ZIP 作成",
       description: "複数のファイルを1つの ZIP アーカイブにまとめる",
@@ -3997,6 +4001,18 @@ export const ja: TranslationKeys = {
       submit: "変換",
       submitBatch: "変換 ({count}ファイル)",
       progressLabel: "変換中",
+    },
+    "proportion-calculator": {
+      modeLabel: "種類",
+      direct: "正比例",
+      inverse: "反比例",
+      directHint: "A:B = C:X なので X = B × C ÷ A",
+      inverseHint: "A × B = C × X なので X = A × B ÷ C",
+      calculate: "計算",
+      result: "結果",
+      invalidNumber: "数値を入力してください",
+      zeroDivisorDirect: "正比例ではAに0は使えません",
+      zeroDivisorInverse: "反比例ではCに0は使えません",
     },
     "create-zip": {
       submit: "ZIPを作成",

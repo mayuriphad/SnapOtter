@@ -1239,6 +1239,10 @@ export const fr: TranslationKeys = {
       name: "XML vers CSV",
       description: "Extrayez les éléments répétitifs d’un XML vers un tableau CSV",
     },
+    "proportion-calculator": {
+      name: "Calculateur de proportions",
+      description: "Résolvez la règle de trois : trouvez X à partir de trois valeurs connues",
+    },
     "create-zip": {
       name: "Créer un ZIP",
       description: "Regroupez plusieurs fichiers dans une seule archive ZIP",
@@ -4065,6 +4069,18 @@ export const fr: TranslationKeys = {
       submit: "Convertir",
       submitBatch: "Convertir ({count} fichiers)",
       progressLabel: "Conversion",
+    },
+    "proportion-calculator": {
+      modeLabel: "Type",
+      direct: "Directe",
+      inverse: "Inverse",
+      directHint: "A est à B ce que C est à X, donc X = B × C ÷ A",
+      inverseHint: "A × B = C × X, donc X = A × B ÷ C",
+      calculate: "Calculer",
+      result: "Résultat",
+      invalidNumber: "Saisissez un nombre",
+      zeroDivisorDirect: "A ne peut pas valoir 0 dans une proportion directe",
+      zeroDivisorInverse: "C ne peut pas valoir 0 dans une proportion inverse",
     },
     "create-zip": {
       submit: "Créer un ZIP",

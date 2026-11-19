@@ -1232,6 +1232,10 @@ export const vi: TranslationKeys = {
       name: "XML sang CSV",
       description: "Trích xuất các phần tử lặp lại từ XML thành bảng CSV",
     },
+    "proportion-calculator": {
+      name: "Máy tính tỉ lệ",
+      description: "Giải quy tắc tam suất: tìm X từ ba giá trị đã biết",
+    },
     "create-zip": {
       name: "Tạo ZIP",
       description: "Gộp nhiều tệp thành một kho lưu trữ ZIP",
@@ -4039,6 +4043,18 @@ export const vi: TranslationKeys = {
       submit: "Chuyển đổi",
       submitBatch: "Chuyển đổi ({count} tệp)",
       progressLabel: "Đang chuyển đổi",
+    },
+    "proportion-calculator": {
+      modeLabel: "Loại",
+      direct: "Thuận",
+      inverse: "Nghịch",
+      directHint: "A so với B bằng C so với X, nên X = B × C ÷ A",
+      inverseHint: "A × B = C × X, nên X = A × B ÷ C",
+      calculate: "Tính",
+      result: "Kết quả",
+      invalidNumber: "Nhập một số",
+      zeroDivisorDirect: "A không thể bằng 0 trong tỉ lệ thuận",
+      zeroDivisorInverse: "C không thể bằng 0 trong tỉ lệ nghịch",
     },
     "create-zip": {
       submit: "Tạo ZIP",
