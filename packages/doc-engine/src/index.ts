@@ -50,9 +50,11 @@ export {
 export {
   type DocsScriptOptions,
   htmlToPdfPy,
+  type PdfMetadataStripResult,
   pdfFlattenPy,
   pdfMetadataGetPy,
   pdfMetadataSetPy,
+  pdfMetadataStripPy,
   pdfPageCountPy,
   pdfRedactPy,
   pdfScrubProducerPy,

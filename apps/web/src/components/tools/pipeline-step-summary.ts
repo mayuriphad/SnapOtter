@@ -187,6 +187,7 @@ export function getSettingsSummary(toolId: string, settings: Record<string, unkn
       return "";
     }
     case "pdf-metadata": {
+      if (settings.stripAll) return "Remove metadata";
       if (settings.title || settings.author || settings.subject || settings.keywords)
         return "Metadata";
       return "";
