@@ -8,16 +8,16 @@ import {
   videoContentType,
   videoEncodeArgsForContainer,
 } from "../../lib/media-tool.js";
+import { checkTrimMode, resolveTrimWindow, trimModeFields } from "../../lib/trim-window.js";
 import { InputValidationError } from "../../modality/contract.js";
 import { createToolRoute } from "../tool-factory.js";
 
 const settingsSchema = z
   .object({
-    startS: z.number().finite().min(0).default(0),
-    endS: z.number().finite().min(0.000001),
+    ...trimModeFields,
     precise: z.boolean().default(false),
   })
-  .refine((s) => s.endS > s.startS, { message: "End must be after start" });
+  .superRefine((s, ctx) => checkTrimMode(s, ctx));
 
 export function registerTrimVideo(app: FastifyInstance) {
   createToolRoute(app, {
@@ -37,16 +37,13 @@ export function registerTrimVideo(app: FastifyInstance) {
         if (info.durationS === null) {
           throw new InputValidationError("Could not determine video duration");
         }
-        if (settings.startS >= info.durationS) {
-          throw new InputValidationError("Start is beyond the end of the video");
-        }
-        const endS = Math.min(settings.endS, info.durationS);
+        const { startS, endS } = resolveTrimWindow(settings, info.durationS, "video");
         if (settings.precise) {
           return [
             "-i",
             inPath,
             "-ss",
-            formatFfmpegSeconds(settings.startS),
+            formatFfmpegSeconds(startS),
             "-to",
             formatFfmpegSeconds(endS),
             ...videoEncodeArgsForContainer(origExt),
@@ -57,7 +54,7 @@ export function registerTrimVideo(app: FastifyInstance) {
         // Fast seek: -ss before -i for stream-copy
         return [
           "-ss",
-          formatFfmpegSeconds(settings.startS),
+          formatFfmpegSeconds(startS),
           "-to",
           formatFfmpegSeconds(endS),
           "-i",
