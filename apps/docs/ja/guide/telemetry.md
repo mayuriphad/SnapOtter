@@ -1,8 +1,8 @@
 ---
 description: "SnapOtterが収集する匿名の使用データ、それが送信されるタイミング、インスタンス全体の製品アナリティクスをオフにする方法。"
-i18n_source_hash: 1a68d9371570
+i18n_source_hash: 26b22cff3772
 i18n_provenance: machine
-i18n_output_hash: a9e36fe9da95
+i18n_output_hash: 2b89cc8ced8d
 i18n_hash_version: 2
 ---
 
@@ -12,7 +12,7 @@ i18n_hash_version: 2
 
 ## 送信するイベント(有効時) {#events-we-send-when-enabled}
 
-- tool_used: ツールID、ステータス、所要時間、カテゴリ、AIツールかどうか、失敗時のエラーコード。
+- tool_used: ツールID、ステータス、所要時間、カテゴリ、AIツールかどうか、失敗時のエラーコード、1つの段階を個別に報告するツールのステップ名（Passport Photo の解析ステップ）。
 - pipeline_executed: ステップ数、ツールID、バッチフラグ、ファイル数、所要時間、ステータス。
 - ai_bundle_action: バンドルID、アクション、所要時間。
 - フロントエンドの使用状況: どのツールページを開いたか、追加されたファイル(数のみ)、ツールの開始、ダウンロード、保存、検索(結果数のみ)、バッチ処理。

@@ -1,8 +1,8 @@
 ---
 description: "SnapOtter thu thập dữ liệu sử dụng ẩn danh nào, khi nào nó được gửi, và cách tắt phân tích sản phẩm trên toàn phiên bản."
-i18n_source_hash: 1a68d9371570
+i18n_source_hash: 26b22cff3772
 i18n_provenance: machine
-i18n_output_hash: 05c300999c48
+i18n_output_hash: 1df1d1f987ef
 i18n_hash_version: 2
 ---
 
@@ -12,7 +12,7 @@ Phân tích Sản phẩm Ẩn danh được bật theo mặc định và đượ
 
 ## Các sự kiện chúng tôi gửi (khi được bật) {#events-we-send-when-enabled}
 
-- tool_used: id công cụ, trạng thái, thời lượng, danh mục, có phải là công cụ AI hay không, mã lỗi khi thất bại.
+- tool_used: id công cụ, trạng thái, thời lượng, danh mục, có phải là công cụ AI hay không, mã lỗi khi thất bại, và tên bước đối với công cụ báo cáo riêng một giai đoạn (bước phân tích của Passport Photo).
 - pipeline_executed: số bước, id công cụ, cờ batch, số lượng tệp, thời lượng, trạng thái.
 - ai_bundle_action: id gói, hành động, thời lượng.
 - Sử dụng frontend: những trang công cụ nào được mở, tệp được thêm (chỉ số lượng), công cụ được khởi động, lượt tải xuống, lượt lưu, tìm kiếm (chỉ số lượng kết quả), batch được xử lý.

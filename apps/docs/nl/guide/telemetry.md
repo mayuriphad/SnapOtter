@@ -1,8 +1,8 @@
 ---
 description: "Welke anonieme gebruiksgegevens SnapOtter verzamelt, wanneer die worden verstuurd, en hoe je instance-brede productanalytics uitschakelt."
-i18n_source_hash: 1a68d9371570
+i18n_source_hash: 26b22cff3772
 i18n_provenance: machine
-i18n_output_hash: 02d5b2596e37
+i18n_output_hash: dd7341b77f8a
 i18n_hash_version: 2
 ---
 
@@ -12,7 +12,7 @@ Anonieme productanalytics staat standaard aan en wordt door een beheerder voor d
 
 ## Events die we versturen (indien ingeschakeld) {#events-we-send-when-enabled}
 
-- tool_used: tool-id, status, duur, categorie, of het een AI-tool is, een foutcode bij een mislukking.
+- tool_used: tool-id, status, duur, categorie, of het een AI-tool is, een foutcode bij een mislukking en de stapnaam voor een tool die één fase apart meldt (de analysestap van Passport Photo).
 - pipeline_executed: aantal stappen, tool-id's, batch-flag, aantal bestanden, duur, status.
 - ai_bundle_action: bundle-id, actie, duur.
 - Frontend-gebruik: welke tool-pagina's geopend worden, toegevoegde bestanden (alleen aantallen), gestarte tool, downloads, opslagacties, zoekopdrachten (alleen aantal resultaten), verwerkte batches.

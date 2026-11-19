@@ -1,8 +1,8 @@
 ---
 description: "Jakie anonimowe dane o użyciu zbiera SnapOtter, kiedy są wysyłane i jak wyłączyć analitykę produktową dla całej instancji."
-i18n_source_hash: 1a68d9371570
+i18n_source_hash: 26b22cff3772
 i18n_provenance: machine
-i18n_output_hash: 8a43e309c77a
+i18n_output_hash: ef3afab1a618
 i18n_hash_version: 2
 ---
 
@@ -12,7 +12,7 @@ Anonimowa analityka produktowa jest domyślnie włączona i ustawiana dla całej
 
 ## Zdarzenia, które wysyłamy (gdy włączone) {#events-we-send-when-enabled}
 
-- tool_used: id narzędzia, status, czas trwania, kategoria, czy jest to narzędzie AI, kod błędu przy niepowodzeniu.
+- tool_used: id narzędzia, status, czas trwania, kategoria, czy jest to narzędzie AI, kod błędu przy niepowodzeniu oraz nazwa kroku dla narzędzia, które zgłasza jeden etap osobno (krok analizy w Passport Photo).
 - pipeline_executed: liczba kroków, id narzędzi, flaga wsadu, liczba plików, czas trwania, status.
 - ai_bundle_action: id pakietu, akcja, czas trwania.
 - Użycie frontendu: które strony narzędzi się otwierają, dodane pliki (tylko liczby), uruchomione narzędzie, pobrania, zapisy, wyszukiwanie (tylko liczba wyników), przetwarzanie wsadowe.

@@ -1,8 +1,8 @@
 ---
 description: "SnapOtter 會收集哪些匿名使用資料、何時傳送，以及如何關閉整個執行個體的產品分析。"
-i18n_source_hash: 1a68d9371570
+i18n_source_hash: 26b22cff3772
 i18n_provenance: machine
-i18n_output_hash: 544fc5bac74d
+i18n_output_hash: 41f451c9131e
 i18n_hash_version: 2
 ---
 
@@ -12,7 +12,7 @@ i18n_hash_version: 2
 
 ## 我們傳送的事件（啟用時） {#events-we-send-when-enabled}
 
-- tool_used：工具 id、狀態、時長、類別、是否為 AI 工具，以及失敗時的錯誤代碼。
+- tool_used：工具 id、狀態、時長、類別、是否為 AI 工具，失敗時的錯誤代碼，以及單獨回報某一階段的工具的步驟名稱（Passport Photo 的分析步驟）。
 - pipeline_executed：步驟數、工具 id、批次旗標、檔案數、時長、狀態。
 - ai_bundle_action：套件包 id、動作、時長。
 - 前端使用情形：開啟了哪些工具頁面、新增的檔案（僅計數）、已啟動的工具、下載、儲存、搜尋（僅結果數量）、已批次處理。

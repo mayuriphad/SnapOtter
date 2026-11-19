@@ -1,8 +1,8 @@
 ---
 description: "SnapOtter कौन सा अनाम usage data एकत्र करता है, इसे कब भेजा जाता है, और instance-wide product analytics को कैसे बंद करें।"
-i18n_source_hash: 1a68d9371570
+i18n_source_hash: 26b22cff3772
 i18n_provenance: machine
-i18n_output_hash: 26977ce70891
+i18n_output_hash: cc44a0d6e207
 i18n_hash_version: 2
 ---
 
@@ -12,7 +12,7 @@ Anonymous Product Analytics default रूप से चालू है और 
 
 ## Events we send (when enabled) {#events-we-send-when-enabled}
 
-- tool_used: tool id, status, duration, category, यह एक AI tool है या नहीं, विफलता पर एक error code।
+- tool_used: tool id, status, duration, category, यह एक AI tool है या नहीं, विफलता पर एक error code, और उस tool के लिए step का नाम जो किसी एक चरण की अलग से रिपोर्ट करता है (Passport Photo का analyze step)।
 - pipeline_executed: step count, tool ids, batch flag, file count, duration, status।
 - ai_bundle_action: bundle id, action, duration।
 - Frontend usage: कौन से tool pages खुलते हैं, जोड़ी गई files (केवल counts), tool शुरू हुआ, downloads, saves, search (केवल result count), batch processed।

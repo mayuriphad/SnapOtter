@@ -1,8 +1,8 @@
 ---
 description: "Data penggunaan anonim apa yang dikumpulkan SnapOtter, kapan dikirim, dan cara mematikan analitik produk untuk seluruh instance."
-i18n_source_hash: 1a68d9371570
+i18n_source_hash: 26b22cff3772
 i18n_provenance: machine
-i18n_output_hash: fb05a16291d8
+i18n_output_hash: 8f58016cfcef
 i18n_hash_version: 2
 ---
 
@@ -12,7 +12,7 @@ Analitik Produk Anonim aktif secara default dan diatur untuk seluruh instance ol
 
 ## Peristiwa yang kami kirim (ketika diaktifkan) {#events-we-send-when-enabled}
 
-- tool_used: id alat, status, durasi, kategori, apakah ini alat AI, kode error saat gagal.
+- tool_used: id alat, status, durasi, kategori, apakah ini alat AI, kode error saat gagal, dan nama langkah untuk alat yang melaporkan satu tahap secara terpisah (langkah analisis Passport Photo).
 - pipeline_executed: jumlah langkah, id alat, flag batch, jumlah file, durasi, status.
 - ai_bundle_action: id bundle, aksi, durasi.
 - Penggunaan frontend: halaman alat mana yang dibuka, file ditambahkan (hanya jumlah), alat dimulai, unduhan, penyimpanan, pencarian (hanya jumlah hasil), batch diproses.

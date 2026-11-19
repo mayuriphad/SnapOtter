@@ -1,8 +1,8 @@
 ---
 description: "Quais dados de uso anônimos o SnapOtter coleta, quando são enviados e como desativar as análises de produto em toda a instância."
-i18n_source_hash: 1a68d9371570
+i18n_source_hash: 26b22cff3772
 i18n_provenance: machine
-i18n_output_hash: ee919d6f1f27
+i18n_output_hash: da8aa8f34a45
 i18n_hash_version: 2
 ---
 
@@ -12,7 +12,7 @@ As Análises de Produto Anônimas estão ativadas por padrão e são definidas p
 
 ## Eventos que enviamos (quando ativado) {#events-we-send-when-enabled}
 
-- tool_used: id da ferramenta, status, duração, categoria, se é uma ferramenta de IA e um código de erro em caso de falha.
+- tool_used: id da ferramenta, status, duração, categoria, se é uma ferramenta de IA, um código de erro em caso de falha e o nome da etapa quando uma ferramenta relata uma fase separadamente (a etapa de análise do Passport Photo).
 - pipeline_executed: contagem de etapas, ids das ferramentas, flag de lote, contagem de arquivos, duração, status.
 - ai_bundle_action: id do pacote, ação, duração.
 - Uso do frontend: quais páginas de ferramentas são abertas, arquivos adicionados (apenas contagens), ferramenta iniciada, downloads, salvamentos, busca (apenas contagem de resultados), processamento em lote.
