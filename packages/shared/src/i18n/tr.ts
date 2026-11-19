@@ -4063,6 +4063,7 @@ export const tr: TranslationKeys = {
       urlSafe: "URL için güvenli (- ve _, dolgu yok)",
       converting: "Dönüştürülüyor",
       result: "Sonuç",
+      tooLong: "Bu metin {count} karakter. Sınır {max}.",
     },
     "create-zip": {
       submit: "ZIP Oluştur",

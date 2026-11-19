@@ -4056,6 +4056,7 @@ export const es: TranslationKeys = {
       urlSafe: "Seguro para URL (- y _, sin relleno)",
       converting: "Convirtiendo",
       result: "Resultado",
+      tooLong: "Tiene {count} caracteres. El límite es {max}.",
     },
     "create-zip": {
       submit: "Crear ZIP",

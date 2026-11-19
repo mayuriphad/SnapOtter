@@ -4068,6 +4068,7 @@ export const ru: TranslationKeys = {
       urlSafe: "Безопасно для URL (- и _, без дополнения)",
       converting: "Конвертация",
       result: "Результат",
+      tooLong: "Длина {count} символов. Максимум {max}.",
     },
     "create-zip": {
       submit: "Создать ZIP",

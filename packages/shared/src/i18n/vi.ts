@@ -4054,6 +4054,7 @@ export const vi: TranslationKeys = {
       urlSafe: "An toàn cho URL (- và _, không đệm)",
       converting: "Đang chuyển đổi",
       result: "Kết quả",
+      tooLong: "Văn bản dài {count} ký tự. Giới hạn là {max}.",
     },
     "create-zip": {
       submit: "Tạo ZIP",
