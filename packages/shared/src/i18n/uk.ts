@@ -1429,6 +1429,7 @@ export const uk: TranslationKeys = {
       customSize: "Власний розмір",
       scale: "Масштаб",
       presets: "Шаблони",
+      presetsCropNote: "Шаблони обрізають зображення, щоб воно точно заповнило розмір.",
       contentAware: "Контентно-залежний",
       aspectRatio: "Співвідношення сторін",
       ratioFree: "Вільно",

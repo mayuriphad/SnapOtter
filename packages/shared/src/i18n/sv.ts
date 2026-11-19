@@ -1426,6 +1426,7 @@ export const sv: TranslationKeys = {
       customSize: "Anpassad storlek",
       scale: "Skala",
       presets: "Mallar",
+      presetsCropNote: "Mallar beskär bilden så att den fyller exakt storlek.",
       contentAware: "Innehållsmedveten",
       aspectRatio: "Bildförhållande",
       ratioFree: "Fri",

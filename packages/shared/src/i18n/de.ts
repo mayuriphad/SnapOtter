@@ -1435,6 +1435,7 @@ export const de: TranslationKeys = {
       customSize: "Benutzerdefinierte Größe",
       scale: "Skalierung",
       presets: "Vorlagen",
+      presetsCropNote: "Vorlagen schneiden das Bild zu, damit es die Größe genau ausfüllt.",
       contentAware: "Inhaltsabhängig",
       aspectRatio: "Seitenverhältnis",
       ratioFree: "Frei",
