@@ -6,6 +6,10 @@ description: Release notes and version history for SnapOtter. See what's new, im
 
 ## Unreleased {#unreleased}
 
+### Changed {#unreleased-changed}
+
+- **Image to SVG (`vectorize`) now runs as a queued job.** `POST /api/v1/tools/image/vectorize` used to trace on the request and always answer `200`. It now goes through the job queue like other tools: a trace that finishes inside the synchronous wait window still answers `200` with the same body, and a longer one answers `202` with a job id, `statusUrl`, and `progressUrl`. API clients that only handle `200` should follow the job when they get a `202`. The job can now be canceled and reports progress, and error bodies use the standard tool shapes (a missing file says `No file provided`; an undecodable image is a `400`). The SVG output is unchanged. (#4337)
+
 ### Deprecated {#unreleased-deprecated}
 
 - **The five image compress-to-size operations are deprecated.** `/api/v1/tools/image/compress-image-to-20kb`, `-50kb`, `-100kb`, `-200kb`, and `-500kb` are marked deprecated in the OpenAPI spec and will stay for at least one minor release. Send `POST /api/v1/tools/image/compress` with `settings` set to `{"mode":"targetSize","targetSizeKb":20}` (or 50, 100, 200, 500). The output is the same. The PDF preset paths are unchanged.

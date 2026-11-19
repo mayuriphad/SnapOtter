@@ -46,6 +46,7 @@ const FACTORY_SINGLE_IMAGE_TOOLS = [
   "gif-tools",
   "image-enhancement",
   "strip-metadata",
+  "vectorize",
 ] as const;
 
 // Non-preset image tools in TOOLS that are NOT in FACTORY_SINGLE_IMAGE_TOOLS:
@@ -57,7 +58,6 @@ const EXEMPT_IMAGE_TOOLS = new Set([
   "collage",
   "meme-generator",
   "beautify",
-  "vectorize",
   "split",
   "content-aware-resize",
   // Input-agnostic / metadata-only / generator / custom-contract routes
@@ -233,7 +233,6 @@ describe("Undecodable image input matrix (#949)", () => {
       settings: { textBoxes: [{ id: "top", text: "HI" }] },
     },
     { toolId: "beautify", settings: {} },
-    { toolId: "vectorize", settings: {} },
     { toolId: "split", settings: { columns: 2, rows: 2 } },
     { toolId: "content-aware-resize", settings: { width: 50 } },
   ])(
