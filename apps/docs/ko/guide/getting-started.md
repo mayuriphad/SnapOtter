@@ -1,8 +1,8 @@
 ---
 description: "Docker로 명령 한 줄에 SnapOtter를 설치합니다. Docker Compose 설정, 소스 빌드, 전체 기능 개요를 포함합니다."
-i18n_source_hash: 2291f9ca0071
+i18n_source_hash: 9481527d1800
 i18n_provenance: machine
-i18n_output_hash: e27cdde9c6c6
+i18n_output_hash: 0807229d2ca3
 i18n_hash_version: 2
 ---
 
@@ -105,7 +105,7 @@ pnpm dev
 | **비디오** | 57 | 자르기, 크롭, 압축, 변환, 병합, 오디오 추출, 자동 자막, 비디오를 GIF로, 크기 조정, 흔들림 보정, 형식 프리셋 |
 | **오디오** | 27 | 자르기, 병합, 변환, 노멀라이즈, 노이즈 감소, 받아쓰기, 피치 변경, 페이드, 벨소리 만들기, 형식 프리셋 |
 | **PDF / 문서** | 35 | 병합, 분할, 압축, OCR, 워터마크, 가림 처리, Word를 PDF로, Excel을 PDF로, 회전, 보호, 복구 |
-| **파일** | 23 | CSV를 JSON으로, JSON을 XML로, CSV 병합, CSV 분할, ZIP 만들기, ZIP 풀기, 차트 만들기, YAML/JSON |
+| **파일** | 24 | CSV를 JSON으로, JSON을 XML로, CSV 병합, CSV 분할, ZIP 만들기, ZIP 풀기, 차트 만들기, YAML/JSON |
 
 ### 파이프라인 {#pipelines}
 

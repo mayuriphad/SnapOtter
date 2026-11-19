@@ -1,8 +1,8 @@
 ---
 description: "Instale SnapOtter con Docker en un solo comando. Incluye la configuración con Docker Compose, la compilación desde el código fuente y una descripción completa de las funciones."
-i18n_source_hash: 2291f9ca0071
+i18n_source_hash: 9481527d1800
 i18n_provenance: machine
-i18n_output_hash: 98bafaa09848
+i18n_output_hash: 57352b6425bd
 i18n_hash_version: 2
 ---
 
@@ -105,7 +105,7 @@ pnpm dev
 | **Vídeo** | 57 | Cortar, Recortar encuadre, Comprimir, Convertir, Unir, Extraer audio, Subtítulos automáticos, Vídeo a GIF, Redimensionar, Estabilizar, preajustes de formato |
 | **Audio** | 27 | Cortar, Unir, Convertir, Normalizar, Reducción de ruido, Transcribir, Cambio de tono, Fundido, Creador de tonos de llamada, preajustes de formato |
 | **PDF / Documento** | 35 | Unir, Dividir, Comprimir, OCR, Marca de agua, Censurar, Word a PDF, Excel a PDF, Rotar, Proteger, Reparar |
-| **Archivos** | 23 | CSV a JSON, JSON a XML, Unir CSV, Dividir CSV, Crear ZIP, Extraer ZIP, Creador de gráficos, YAML/JSON |
+| **Archivos** | 24 | CSV a JSON, JSON a XML, Unir CSV, Dividir CSV, Crear ZIP, Extraer ZIP, Creador de gráficos, YAML/JSON |
 
 ### Pipelines {#pipelines}
 

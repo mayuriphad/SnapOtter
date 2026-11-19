@@ -625,6 +625,7 @@ function buildBaseTheme() {
               { text: "JSON to XML", link: "/tools/files/json-xml" },
               { text: "Split CSV", link: "/tools/files/split-csv" },
               { text: "Merge CSVs", link: "/tools/files/merge-csvs" },
+              { text: "Merge Text Files", link: "/tools/files/merge-text" },
               { text: "Convert YAML / JSON", link: "/tools/files/yaml-json" },
               { text: "XML to CSV", link: "/tools/files/xml-to-csv" },
               { text: "Create ZIP", link: "/tools/files/create-zip" },

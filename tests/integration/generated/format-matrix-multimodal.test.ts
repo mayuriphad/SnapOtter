@@ -61,6 +61,7 @@ const MULTI_INPUT_TOOLS = new Set([
   "merge-videos",
   "merge-audio",
   "merge-csvs",
+  "merge-text",
   "replace-audio",
   "burn-subtitles",
   "embed-subtitles",

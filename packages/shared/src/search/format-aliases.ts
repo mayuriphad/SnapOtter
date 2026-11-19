@@ -92,7 +92,7 @@ const JOINABLE_FORMATS = [
     ...["ass", "srt", "vtt"],
     // Documents and data.
     ...["csv", "epub", "htm", "html", "json", "odp", "ods", "odt", "pdf", "rtf", "text", "tsv"],
-    ...["txt", "xml", "yaml", "yml", "zip"],
+    ...["txt", "xml", "yaml", "yml", "zip", "log"],
     // Words from the x-to-y tool ids (html-to-image, video-to-gif, ...).
     ...["base64", "frames", "images", "raster", "video"],
     // Speech-to-text phrasings ("speech2text", "voice2text").
