@@ -21,7 +21,7 @@ describe("toolSection", () => {
         .sort();
     expect(TOOLS.filter((t) => toolSection(t) === "image")).toHaveLength(112);
     expect(TOOLS.filter((t) => toolSection(t) === "video")).toHaveLength(57);
-    expect(TOOLS.filter((t) => toolSection(t) === "audio")).toHaveLength(27);
+    expect(TOOLS.filter((t) => toolSection(t) === "audio")).toHaveLength(57);
     expect(bySection("pdf")).toHaveLength(35);
     expect(bySection("files")).toHaveLength(23);
     expect(bySection("pdf")).toContain("sign-pdf");
