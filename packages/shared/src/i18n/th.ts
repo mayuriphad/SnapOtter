@@ -587,6 +587,10 @@ export const th: TranslationKeys = {
       name: "เพิ่มประสิทธิภาพสำหรับเว็บ",
       description: "เพิ่มประสิทธิภาพภาพสำหรับเว็บด้วยการแปลงรูปแบบ ควบคุมคุณภาพ และแสดงตัวอย่างแบบสด",
     },
+    "optimize-svg": {
+      name: "เพิ่มประสิทธิภาพ SVG",
+      description: "ย่อโค้ด SVG ด้วย svgo และคงผลลัพธ์เป็น SVG แบบเวกเตอร์",
+    },
     "strip-metadata": {
       name: "ลบข้อมูลเมตาของภาพ",
       description: "ลบ EXIF, GPS และข้อมูลกล้อง",
@@ -1495,6 +1499,16 @@ export const th: TranslationKeys = {
       larger: "ใหญ่ขึ้น {percent}%",
       submit: "ประมวลผลและดาวน์โหลด",
       submitBatch: "ประมวลผลและดาวน์โหลด ({count} ไฟล์)",
+      progressLabel: "กำลังเพิ่มประสิทธิภาพ",
+    },
+    "optimize-svg": {
+      precision: "ความละเอียดทศนิยม",
+      precisionHint: "จำนวนตำแหน่งทศนิยมที่เก็บไว้ในพิกัด ยิ่งน้อยไฟล์ยิ่งเล็ก",
+      removeMetadata: "ลบความคิดเห็นและข้อมูลเมตา",
+      multipass: "ทำงานหลายรอบ",
+      pretty: "จัดรูปแบบผลลัพธ์ให้อ่านง่าย",
+      submit: "เพิ่มประสิทธิภาพ SVG",
+      submitBatch: "เพิ่มประสิทธิภาพ SVG ({count} ไฟล์)",
       progressLabel: "กำลังเพิ่มประสิทธิภาพ",
     },
     "strip-metadata": {
@@ -5611,6 +5625,7 @@ export const th: TranslationKeys = {
       STORAGE_QUOTA_EXCEEDED: "เกินโควตาพื้นที่จัดเก็บ",
       TARGET_SIZE_EXCEEDED: "ผลลัพธ์ไม่สามารถถึงขนาดเป้าหมายได้",
       TOO_MANY_FRAMES: "ไฟล์นี้มีเฟรมมากเกินไปที่จะประมวลผล",
+      SVG_TOO_LARGE: "SVG นี้มีขนาดใหญ่หรือซับซ้อนเกินกว่าจะเพิ่มประสิทธิภาพได้",
       CANCELED: "ยกเลิกการดำเนินการแล้ว",
       PAGE_OUT_OF_RANGE: "ช่วงหน้านี้มีหน้าที่ไม่มีอยู่ใน PDF นี้",
       INVALID_PAGE_RANGE: "ช่วงหน้านี้ไม่ถูกต้อง ใช้หมายเลขหน้าเช่น 1-3,5",

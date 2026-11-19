@@ -591,6 +591,10 @@ export const ru: TranslationKeys = {
       description:
         "Оптимизация изображений для веба с конвертацией формата, контролем качества и предпросмотром",
     },
+    "optimize-svg": {
+      name: "Оптимизация SVG",
+      description: "Сжимает код SVG с помощью svgo и сохраняет результат в векторном SVG",
+    },
     "strip-metadata": {
       name: "Удаление метаданных изображения",
       description: "Удаление EXIF, GPS и информации о камере",
@@ -1522,6 +1526,17 @@ export const ru: TranslationKeys = {
       larger: "На {percent}% больше",
       submit: "Обработать и скачать",
       submitBatch: "Обработать и скачать ({count} файлов)",
+      progressLabel: "Оптимизация",
+    },
+    "optimize-svg": {
+      precision: "Точность",
+      precisionHint:
+        "Число знаков после запятой в координатах. Чем меньше знаков, тем меньше файл.",
+      removeMetadata: "Удалить комментарии и метаданные",
+      multipass: "Выполнить несколько проходов",
+      pretty: "Форматировать вывод",
+      submit: "Оптимизировать SVG",
+      submitBatch: "Оптимизировать SVG ({count} файлов)",
       progressLabel: "Оптимизация",
     },
     "strip-metadata": {
@@ -5721,6 +5736,7 @@ export const ru: TranslationKeys = {
       STORAGE_QUOTA_EXCEEDED: "Квота хранилища превышена.",
       TARGET_SIZE_EXCEEDED: "Результат не может достичь целевого размера.",
       TOO_MANY_FRAMES: "В этом файле слишком много кадров для обработки.",
+      SVG_TOO_LARGE: "Этот SVG слишком большой или сложный для оптимизации.",
       CANCELED: "Операция отменена.",
       PAGE_OUT_OF_RANGE: "В этом диапазоне есть страница, которой нет в этом PDF.",
       INVALID_PAGE_RANGE:

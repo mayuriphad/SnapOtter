@@ -580,6 +580,10 @@ export const en = {
       description:
         "Optimize images for web with format conversion, quality control, and live preview",
     },
+    "optimize-svg": {
+      name: "Optimize SVG",
+      description: "Minify SVG code with svgo and keep the result as a vector SVG",
+    },
     "strip-metadata": {
       name: "Remove Image Metadata",
       description: "Remove EXIF, GPS, and camera info",
@@ -1467,6 +1471,16 @@ export const en = {
       larger: "{percent}% larger",
       submit: "Process & Download",
       submitBatch: "Process & Download ({count} files)",
+      progressLabel: "Optimizing",
+    },
+    "optimize-svg": {
+      precision: "Decimal Precision",
+      precisionHint: "Decimal places kept in coordinates. Fewer places give a smaller file.",
+      removeMetadata: "Remove comments and metadata",
+      multipass: "Run multiple passes",
+      pretty: "Pretty-print output",
+      submit: "Optimize SVG",
+      submitBatch: "Optimize SVG ({count} files)",
       progressLabel: "Optimizing",
     },
     "strip-metadata": {
@@ -5631,6 +5645,7 @@ export const en = {
       STORAGE_QUOTA_EXCEEDED: "Storage quota exceeded.",
       TARGET_SIZE_EXCEEDED: "The result can't reach the target size.",
       TOO_MANY_FRAMES: "This file has too many frames to process.",
+      SVG_TOO_LARGE: "This SVG is too large or complex to optimize.",
       CANCELED: "The operation was canceled.",
       PAGE_OUT_OF_RANGE: "That page range includes a page this PDF doesn't have.",
       INVALID_PAGE_RANGE: "That page range isn't valid. Use page numbers like 1-3,5.",

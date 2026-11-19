@@ -588,6 +588,10 @@ export const uk: TranslationKeys = {
       description:
         "Оптимізація зображень для вебу з конвертацією формату, контролем якості та попереднім переглядом",
     },
+    "optimize-svg": {
+      name: "Оптимізація SVG",
+      description: "Стискає код SVG за допомогою svgo і зберігає результат у векторному SVG",
+    },
     "strip-metadata": {
       name: "Видалення метаданих зображення",
       description: "Видалення EXIF, GPS та інформації про камеру",
@@ -1521,6 +1525,16 @@ export const uk: TranslationKeys = {
       larger: "На {percent}% більше",
       submit: "Обробити й завантажити",
       submitBatch: "Обробити й завантажити ({count} файлів)",
+      progressLabel: "Оптимізація",
+    },
+    "optimize-svg": {
+      precision: "Точність",
+      precisionHint: "Кількість знаків після коми в координатах. Менше знаків дає менший файл.",
+      removeMetadata: "Видалити коментарі та метадані",
+      multipass: "Виконати кілька проходів",
+      pretty: "Форматувати вивід",
+      submit: "Оптимізувати SVG",
+      submitBatch: "Оптимізувати SVG ({count} файлів)",
       progressLabel: "Оптимізація",
     },
     "strip-metadata": {
@@ -5720,6 +5734,7 @@ export const uk: TranslationKeys = {
       STORAGE_QUOTA_EXCEEDED: "Перевищено квоту сховища.",
       TARGET_SIZE_EXCEEDED: "Результат не може досягти цільового розміру.",
       TOO_MANY_FRAMES: "У цьому файлі забагато кадрів для обробки.",
+      SVG_TOO_LARGE: "Цей SVG завеликий або заскладний для оптимізації.",
       CANCELED: "Операцію скасовано.",
       PAGE_OUT_OF_RANGE: "У цьому діапазоні є сторінка, якої немає в цьому PDF.",
       INVALID_PAGE_RANGE:
