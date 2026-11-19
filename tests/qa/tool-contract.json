@@ -8421,12 +8421,24 @@
     "registered": true,
     "axes": [
       {
+        "key": "mode",
+        "values": ["range", "ends", null]
+      },
+      {
         "key": "startS",
         "values": [0, 50, 100, null]
       },
       {
         "key": "endS",
-        "values": [0.000001, 50.000001, 100.000001]
+        "values": [1e-6, 50.000001, 100.000001, null]
+      },
+      {
+        "key": "cutStartS",
+        "values": [0, 50, 100, null]
+      },
+      {
+        "key": "cutEndS",
+        "values": [0, 50, 100, null]
       },
       {
         "key": "precise",
@@ -8434,6 +8446,16 @@
       }
     ],
     "invalidProbes": [
+      {
+        "key": "mode",
+        "value": "__snapotter_qa_not_a_member__",
+        "why": "enum outsider"
+      },
+      {
+        "key": "mode",
+        "value": 12345,
+        "why": "wrong type"
+      },
       {
         "key": "startS",
         "value": -1,
@@ -8451,6 +8473,26 @@
       },
       {
         "key": "endS",
+        "value": "not-a-number",
+        "why": "wrong type"
+      },
+      {
+        "key": "cutStartS",
+        "value": -1,
+        "why": "below declared min"
+      },
+      {
+        "key": "cutStartS",
+        "value": "not-a-number",
+        "why": "wrong type"
+      },
+      {
+        "key": "cutEndS",
+        "value": -1,
+        "why": "below declared min"
+      },
+      {
+        "key": "cutEndS",
         "value": "not-a-number",
         "why": "wrong type"
       },
@@ -9955,15 +9997,37 @@
     "registered": true,
     "axes": [
       {
+        "key": "mode",
+        "values": ["range", "ends", null]
+      },
+      {
         "key": "startS",
         "values": [0, 50, 100, null]
       },
       {
         "key": "endS",
-        "values": [0.000001, 50.000001, 100.000001]
+        "values": [1e-6, 50.000001, 100.000001, null]
+      },
+      {
+        "key": "cutStartS",
+        "values": [0, 50, 100, null]
+      },
+      {
+        "key": "cutEndS",
+        "values": [0, 50, 100, null]
       }
     ],
     "invalidProbes": [
+      {
+        "key": "mode",
+        "value": "__snapotter_qa_not_a_member__",
+        "why": "enum outsider"
+      },
+      {
+        "key": "mode",
+        "value": 12345,
+        "why": "wrong type"
+      },
       {
         "key": "startS",
         "value": -1,
@@ -9981,6 +10045,26 @@
       },
       {
         "key": "endS",
+        "value": "not-a-number",
+        "why": "wrong type"
+      },
+      {
+        "key": "cutStartS",
+        "value": -1,
+        "why": "below declared min"
+      },
+      {
+        "key": "cutStartS",
+        "value": "not-a-number",
+        "why": "wrong type"
+      },
+      {
+        "key": "cutEndS",
+        "value": -1,
+        "why": "below declared min"
+      },
+      {
+        "key": "cutEndS",
         "value": "not-a-number",
         "why": "wrong type"
       }
